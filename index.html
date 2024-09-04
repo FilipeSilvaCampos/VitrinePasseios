@@ -35,19 +35,18 @@
                 </a>
             </div>
             <div class="cart-button rounded-circle p-4 d-flex align-items-center justify-content-center"
-             style="border: solid 2px lightcoral; 
-             height: 2rem;
-             width: 2rem;">
+             style="border: solid 2px lightcoral; height: 2rem; width: 2rem;"
+             id="cart-btn">
                 <i class="bi bi-cart-fill"></i>
             </div>
         </div>
         <div class="d-flex flex-row justify-content-between" style="height: 40px">
             <div>
-                <a class="fs-6 fw-semibold" style="color: black;">Passeios</a>
-                <a class="fs-6 fw-semibold ms-3" style="color: black;">Contato</a>
+                <a href="" class="fs-6 fw-semibold" style="color: black;">Passeios</a>
+                <a href="" class="fs-6 fw-semibold ms-3" style="color: black;">Contato</a>
             </div>
             
-            <a class="fw-semibold" style="color: black;">IR PARA O SITE</a>
+            <a href="" class="fw-semibold" style="color: black;">IR PARA O SITE</a>
         </div>
     </nav>
 
@@ -58,14 +57,14 @@
 
         <div class="carousel-inner">    
             <div class="carousel-item active">
-                <img src="./src/imgs/Espelho.jpg" class="w-100">
+                <img src="./src/imgs/index_carousel/espelho.jpg" class="w-100">
                 <div class="carousel-caption top-0 mt-3 text-start" style="max-width: 30rem;">
                     <h1 class="fw-bolder">Os Melhores Passeios Em Porto Seguro!</h1>
                     <button class="btn rounded-pill mt-3" style="background-color: lightcoral; color: white;">Saiba Mais</button>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./src/imgs/Quadri.jpg" class="w-100">
+                <img src="./src/imgs/index_carousel/quadri.jpg" class="w-100">
                 <div class="carousel-caption top-0 mt-3 text-start" style="max-width: 30rem;">
                     <h1 class="fw-bolder">Os Melhores Passeios Em Porto Seguro!</h1>
                     <button class="btn rounded-pill mt-3" style="background-color: lightcoral; color: white;">Saiba Mais</button>
@@ -89,8 +88,9 @@
     </div>
 
     <!--Modal Cart-->
-    <div class="w-100 h-100 top-0 left-0 align-items-center justify-content-center position-fixed modal-cart
-    visually-hidden">
+    <div class="w-100 h-100 top-0 left-0 align-items-center justify-content-center position-fixed modal-cart"
+    style="display: none;"
+    id="cart-modal" >
         <div class="bg-white rounded p-5 modal-inner-cart">
             <h2 class="fs-5 fw-bold">Meu Carrinho</h2>
             <div class="d-flex justify-content-between" id="cart-items"></div>
@@ -105,116 +105,7 @@
     <!--Grid Passeios-->
     <div class="container mt-5 mb-4">
         <h2 class="mb-4">Nossos Passeios</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card" style="border-radius: 20px; min-height: 21rem;">
-                            <img src="./src/imgs/Espelho.jpg" class="card-img-ov">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Praia Espelho</h5>
-                                <div class="card-atractive">
-                                    <div>
-                                        <i class="bi bi-tsunami"></i>
-                                        <span>3° Praia mais linda do pais</span>
-                                    </div>
-                                    <div>
-                                        <i class="bi bi-camera"></i>
-                                        <span>Cenarios incriveis</span>
-                                    </div>
-                                    <div>
-                                        <i class="bi bi-whatsapp"></i>
-                                        <span>Atendimento especializado</span>
-                                    </div>
-                                </div>
-                                <div class="card-footer-ov">
-                                    <span>Pré-Reserva</span>
-                                    <span class="fs-2 fw-bold price-text">30,00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card" style="border-radius: 20px; min-height: 21rem;">
-                            <img src="./src/imgs/Espelho.jpg" class="card-img-ov">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Praia Espelho</h5>
-                                <div class="card-atractive">
-                                    <div>
-                                        <i class="bi bi-tsunami"></i>
-                                        <span>3° Praia mais linda do pais</span>
-                                    </div>
-                                    <div>
-                                        <i class="bi bi-camera"></i>
-                                        <span>Cenarios incriveis</span>
-                                    </div>
-                                    <div>
-                                        <i class="bi bi-whatsapp"></i>
-                                        <span>Atendimento especializado</span>
-                                    </div>
-                                </div>
-                                <div class="card-footer-ov">
-                                    <span>Pré-Reserva</span>
-                                    <span class="fs-2 fw-bold price-text">30,00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card" style="border-radius: 20px; min-height: 21rem;">
-                            <img src="./src/imgs/Espelho.jpg" class="card-img-ov">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Praia Espelho</h5>
-                                <div class="card-atractive">
-                                    <div>
-                                        <i class="bi bi-tsunami"></i>
-                                        <span>3° Praia mais linda do pais</span>
-                                    </div>
-                                    <div>
-                                        <i class="bi bi-camera"></i>
-                                        <span>Cenarios incriveis</span>
-                                    </div>
-                                    <div>
-                                        <i class="bi bi-whatsapp"></i>
-                                        <span>Atendimento especializado</span>
-                                    </div>
-                                </div>
-                                <div class="card-footer-ov">
-                                    <span>Pré-Reserva</span>
-                                    <span class="fs-2 fw-bold price-text">30,00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card" style="border-radius: 20px; min-height: 21rem;"
-                        data-name="Pria do Espelho"
-                        data-price="130"
-                        data-pre-reservation="30">
-                            <img src="./src/imgs/Espelho.jpg" class="card-img-ov">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Praia Espelho</h5>
-                                <div class="card-atractive">
-                                    <div>
-                                        <i class="bi bi-tsunami"></i>
-                                        <span>3° Praia mais linda do pais</span>
-                                    </div>
-                                    <div>
-                                        <i class="bi bi-camera"></i>
-                                        <span>Cenarios incriveis</span>
-                                    </div>
-                                    <div>
-                                        <i class="bi bi-whatsapp"></i>
-                                        <span>Atendimento especializado</span>
-                                    </div>
-                                </div>
-                                <div class="card-footer-ov">
-                                    <span>Pré-Reserva</span>
-                                    <span class="fs-2 fw-bold price-text">30,00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id="tuor-grid" class="container">
             </div>
     </div>
 
@@ -223,7 +114,7 @@
         <div class="floating-button ms-2">Whatsapp</div>
     </div>
 
-    <script src="./src/scripts/script.js"></script>
+    <script src="./src/scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

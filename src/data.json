@@ -1,0 +1,150 @@
+{
+    "servicos": [
+        {
+            "cardImg": "./src/imgs/servicos/espelho/card_espelho.jpg",
+            "viewImgs": [
+                {
+                    "path": "./src/imgs/servicos/espelho/espelho_A.jpeg"
+                },
+                {
+                    "path": "./src/imgs/servicos/espelho/espelho_B.jpeg"
+                }
+            ],
+            "name": "Praia do Espelho",
+            "value": 100.00,
+            "kidValue": 90.00,
+            "preBooking" : 30.00,
+            "type": 0,
+            "description": "lorem ipsum nort eoadaw",
+            "atractives": [
+                {
+                    "iconClass": "bi-tsunami",
+                    "description": "3° Praia mais linda do pais"
+                },
+                {
+                    "iconClass": "bi-camera",
+                    "description": "Cenarios incriveis"
+                },
+                {
+                    "iconClass": "bi-whatsapp",
+                    "description": "Atendimento especializado"
+                }
+            ]
+        },
+        {
+            "cardImg" : "./src/imgs/servicos/trancoso/trancoso_card.jpg",
+            "viewImgs": [
+                {
+                    "path": "./src/imgs/servicos/trancoso/trancoso_A.jpeg"
+                },
+                {
+                    "path": "./src/imgs/servicos/trancoso/trancoso_B.jpeg"
+                }
+            ],
+            "name": "Trancoso",
+            "value": 80.00,
+            "kidValue": 70.00,
+            "preBooking" : 20.00,
+            "type": 0,
+            "description": "lorem ipsum nort eoadaw",
+            "atractives": [
+                {
+                    "iconClass": "bi-tsunami",
+                    "description": "3° Praia mais linda do pais"
+                },
+                {
+                    "iconClass": "bi-camera",
+                    "description": "Cenarios incriveis"
+                },
+                {
+                    "iconClass": "bi-whatsapp",
+                    "description": "Atendimento especializado"
+                }
+            ]
+        },
+        {
+            "cardImg": "./src/imgs/servicos/espelho/card_espelho.jpg",
+            "viewImgs": [
+                {
+                    "path": "./src/imgs/servicos/espelho/espelho_A.jpeg"
+                }
+            ],
+            "name": "Praia do Espelho",
+            "value": 100.00,
+            "kidValue": 90.00,
+            "preBooking" : 30.00,
+            "type": 0,
+            "description": "lorem ipsum nort eoadaw",
+            "atractives": [
+                {
+                    "iconClass": "bi-tsunami",
+                    "description": "3° Praia mais linda do pais"
+                },
+                {
+                    "iconClass": "bi-camera",
+                    "description": "Cenarios incriveis"
+                },
+                {
+                    "iconClass": "bi-whatsapp",
+                    "description": "Atendimento especializado"
+                }
+            ]
+        },
+        {
+            "cardImg": "./src/imgs/servicos/espelho/card_espelho.jpg",
+            "viewImgs": [
+                {
+                    "path": "./src/imgs/servicos/espelho/espelho_A.jpeg"
+                }
+            ],
+            "name": "Praia do Espelho",
+            "value": 100.00,
+            "kidValue": 90.00,
+            "preBooking" : 30.00,
+            "type": 0,
+            "description": "lorem ipsum nort eoadaw",
+            "atractives": [
+                {
+                    "iconClass": "bi-tsunami",
+                    "description": "3° Praia mais linda do pais"
+                },
+                {
+                    "iconClass": "bi-camera",
+                    "description": "Cenarios incriveis"
+                },
+                {
+                    "iconClass": "bi-whatsapp",
+                    "description": "Atendimento especializado"
+                }
+            ]
+        },
+        {
+            "cardImg": "./src/imgs/servicos/espelho/card_espelho.jpg",
+            "viewImgs": [
+                {
+                    "path": "./src/imgs/servicos/espelho/espelho_A.jpeg"
+                }
+            ],
+            "name": "Praia do Espelho",
+            "value": 100.00,
+            "kidValue": 90.00,
+            "preBooking" : 30.00,
+            "type": 0,
+            "description": "lorem ipsum nort eoadaw",
+            "atractives": [
+                {
+                    "iconClass": "bi-tsunami",
+                    "description": "3° Praia mais linda do pais"
+                },
+                {
+                    "iconClass": "bi-camera",
+                    "description": "Cenarios incriveis"
+                },
+                {
+                    "iconClass": "bi-whatsapp",
+                    "description": "Atendimento especializado"
+                }
+            ]
+        }
+    ]
+}

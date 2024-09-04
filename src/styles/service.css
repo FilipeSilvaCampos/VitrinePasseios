@@ -1,0 +1,22 @@
+body a{
+    text-decoration: none;
+}
+
+.nav-logo{
+    margin: 1rem 0 1rem 0;
+    height: 5rem;
+    border-bottom: solid .5px blanchedalmond;
+}
+
+.carousel-indicators img{
+    width: 70px;
+    display: block;
+}
+
+.carousel-indicators button{
+    width: max-content!important;
+}
+
+.carousel-indicators{
+    position: unset!important;
+}
