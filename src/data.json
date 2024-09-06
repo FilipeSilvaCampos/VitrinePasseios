@@ -15,21 +15,35 @@
             "kidValue": 90.00,
             "preBooking" : 30.00,
             "type": 0,
-            "description": "lorem ipsum nort eoadaw",
+            "remarks": [
+                {
+                    "content": "<b>Horario:</b> 7h40 a 8h40."
+                },
+                {
+                    "content": "<b>Duração:</b> 08 horas de passeio."
+                },
+                {
+                    "content": "<b>Saidas:</b> Todos os dias."
+                }
+            ],
             "atractives": [
                 {
                     "iconClass": "bi-tsunami",
-                    "description": "3° Praia mais linda do pais"
+                    "title": "3° Praia mais linda do pais",
+                    "description": "Eleita uma das melhores do mundo"
                 },
                 {
                     "iconClass": "bi-camera",
+                    "title": "Otimo para tirar fotos",
                     "description": "Cenarios incriveis"
                 },
                 {
                     "iconClass": "bi-whatsapp",
-                    "description": "Atendimento especializado"
+                    "title": "Atendimento personalizado",
+                    "description": "Tire suas duvidas com um especialista"
                 }
-            ]
+            ],
+            "description": "Esse passeio é uma mistura de emoção e aventura, graças ao marcante caminho repleto de belas paisagens em meio a mata, trilhado boa parte por estrada de terra. Cruzamos uma grande fazenda de búfalos, passamos pelo Rio dos Frades, cruzamos a tribo indigena de imbiriba em Itaporanga, seguindo à nosso destino, onde permanecemos por 4h. A terceira praia mais bela do brasil! Conhecida como Praia do Espelho, Curuipe é famosa por seus espelhos d'água, formados nas piscinas naturais, entre os corais e arenito. Isso sem contar com a beleza das gigantes falésias, encontradas em pouquíssimos lugares do brasil, e o refrescante rio do Espelho."
         },
         {
             "cardImg" : "./src/imgs/servicos/trancoso/trancoso_card.jpg",
@@ -44,23 +58,40 @@
             "name": "Trancoso",
             "value": 80.00,
             "kidValue": 70.00,
-            "preBooking" : 20.00,
+            "preBooking" : 30.00,
             "type": 0,
-            "description": "lorem ipsum nort eoadaw",
-            "atractives": [
+            "remarks": [
                 {
-                    "iconClass": "bi-tsunami",
-                    "description": "3° Praia mais linda do pais"
+                    "content": "<b>Horario:</b> 7h40 a 8h40."
                 },
                 {
+                    "content": "<b>Duração:</b> 08 horas de passeio."
+                },
+                {
+                    "content": "<b>Saidas:</b> Todos os dias."
+                },
+                {
+                    "content": "<b>Viagem longa: </b>Aproximandente 80km. cerca de 1h30 de viagem."
+                }
+            ],
+            "atractives": [
+                {
                     "iconClass": "bi-camera",
-                    "description": "Cenarios incriveis"
+                    "title": "Cenarios Incriveis",
+                    "description": "Lugares incriveis para tirar foto"
+                },
+                {
+                    "iconClass": "bi-check-circle",
+                    "title": "Quadrado do trancoso",
+                    "description": "Tuor no vilarejo mais famoso da bahia"
                 },
                 {
                     "iconClass": "bi-whatsapp",
-                    "description": "Atendimento especializado"
+                    "title": "Atendimento personalizado",
+                    "description": "Tire suas duvidas com um especialista"
                 }
-            ]
+            ],
+            "description": "Destino de aproximadamente 80km, cerca de 1h30 de viagem. Iniciamos o passeio com destino direto à praia dos Coqueiros, onde permanecemos por 4h numa cabana de praia completa para um confortável dia. Vale a pena considerar uma caminhada de 10min para conhecer também a Praia dos Nativos, onde fica a famosa casinha do pescador. A segunda etapa do passeio é no charmoso quadrado de Trancoso. O guia que os acompanha compartilha ricas informações sobre a comunidade, sua história, a igreja São João Batista e muito mais. Vocês vão se apaixonar pelo centro histórico de lá, é simplesmente encantador. Após, no retorno aos hotéis, temos duas paradas, uma em Vale verde, para esticarmos as pernas, degustarmos as famosas cachaças da região e também as deliciosas cocadas e doces produzidos pela comunidade. E a segunda, numa fabrica de chocolate, para conhecer de perto a tão importante fruta que fez história na Bahia, o CACAU."
         },
         {
             "cardImg": "./src/imgs/servicos/espelho/card_espelho.jpg",

@@ -51,7 +51,7 @@ function createTuorCard(service, id) {
                                 ${createAtractiveElements(service.atractives)}
                                 <div class="card-footer-ov">
                                     <span>Pré-Reserva</span>
-                                    <span class="fs-2 fw-bold price-text">${service.preBooking.toLocaleString(undefined, {style: 'currency', currency: 'BRL'})}</span>
+                                    <span class="fs-3 fw-bold price-text">${service.preBooking.toLocaleString(undefined, {style: 'currency', currency: 'BRL'})}</span>
                                 </div>
                             </div>
                         </div>`
@@ -62,7 +62,7 @@ function createAtractiveElements(atractiveList) {
     for(let i =0; i < 3; i++) {
         element += `<div>
                         <i class="bi ${atractiveList[i].iconClass}"></i>
-                        <span>${atractiveList[i].description}</span>
+                        <span>${atractiveList[i].title}</span>
                     </div>`
     }
     return element + "</div>";

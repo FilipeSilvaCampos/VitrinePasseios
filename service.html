@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Passeio</title>
 
+    <!--Styles-->
     <link rel="stylesheet" href="./src/styles/service.css">
     <link rel="stylesheet" href="./src/styles/reset.css">
+
+    <!--Framework-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- Topper -->
@@ -52,8 +60,9 @@
 
     <div class="container-xxl ps-5 pe-5 mt-4 mb-4">
         <div class="row">
-            <!-- Carousel-->
+            <!-- Left Container-->
             <div class="col-md-7">
+                <!-- Carousel -->
                 <div class="carousel slide"
                 id="carousel"
                 data-bs-ride="true">
@@ -61,22 +70,45 @@
 
                     </div>
                     <div class="carousel-indicators">
-                        <button type="button" class="active"
-                        data-bs-target="#carousel"
-                        data-bs-slide-to="0">
-                        <img src="./src/imgs/Servicos/espelho/espelho_A.jpeg" alt="">
-                        </button>
 
-                        <button type="button"
-                        data-bs-target="#carousel"
-                        data-bs-slide-to="1">
-                        <img src="./src/imgs/Servicos/espelho/espelho_A.jpeg" alt="">
-                        </button>
+                    </div>
+                </div>
+
+                
+                <!-- Description-->
+                <div class="mt-5">
+                    <span class="ps-2 pe-2 border border-dark rounded-pill bg-info">Passeio</span>
+                    <h2 id="service-name" class="mt-1">Praia do espelho</h2>
+                    <div class="atractives-box ps-2 mt-4 mb-5">
+                        
+                    </div>
+                    <h6 class="mb-2 fw-bold txt-subtitle">Sobre a atividade</h6>
+                    <ul id="description-basic-info" class="mb-4">
+                        
+                    </ul>
+
+                    <h4 class="txt-secondary">Como funciona a pré-reserva?</h4>
+                    <p>Você faz o pagamento da pré-reserva e no dia do passeio acerta o valor restante</p>
+
+                    <h4 class="txt-secondary mt-4">Informações importantes</h4>
+                    <ul id="remarks-info">
+
+                    </ul>
+                    <hr>
+                    <h4>Sobre o passeio</h4>
+                    <div id="tuor-description">
+                        <p>Esse passeio é uma mistura de emoção e aventura, graças ao marcante caminho repleto
+                        de belas paisagens em meio a mata, trilhado boa parte por estrada de terra. Cruzamos
+                        uma grande fazenda de búfalos, passamos pelo Rio dos Frades, cruzamos a tribo indigena de 
+                        imbiriba em Itaporanga, seguindo à nosso destino, onde permanecemos por 4h. A terceira praia mais bela do brasil! 
+                        Conhecida como Praia do Espelho, Curuipe é famosa por seus espelhos d'água, formados nas piscinas naturais, entre os corais e arenito.
+                        Isso sem contar com a beleza das gigantes falésias, encontradas em pouquíssimos lugares do brasil, e o refrescante rio do Espelho.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Info-->
+            <!-- Price Info -->
             <div id="right-container" class="col">
                 <div class="card" style="border-radius: 10px;">
                     <div class="card-header d-flex flex-column">
@@ -89,43 +121,47 @@
                                 <i class="bi bi-person"></i>
                                 <span>Quantidade de pessoas</span>
                             </div>
-                            <p id="total-pessoas" class="text-secondary">4 adultos</p>
+                            <p id="total-pessoas" class="text-secondary"></p>
                         </div>
                         <div class="d-flex flex-row align-items-center justify-content-between mt-3">
-                            <div class="d-flex flex-column">
-                                <span>Adulto</span>
+                            <div class="value-info">
+                                <span class="fw-bold">Adulto</span>
                                 <span id="adult-value">R$30.00</span>
                             </div>
                             <div>
                                 <i class="bi bi-dash"
                                 data-reference="adultQtd"></i>
-                                <span id="adult-qtd" class="border border-primary p-1 rounded">0</span>
+                                <span id="adult-qtd" class="amount-button">0</span>
                                 <i class="bi bi-plus-lg"
                                 data-reference="adultQtd"></i>
                             </div>
                         </div>
                         <div class="d-flex flex-row align-items-center justify-content-between mt-3">
-                            <div class="d-flex flex-column">
-                                <span>Criança</span>
-                                <span id="kid-value">R$15.00</span>
+                            <div class="value-info">
+                                <span class="fw-bold">Criança</span>
+                                <p>(De 6 a 10 anos)</p>
+                                <span id="kid-value">R$30.00</span>
                             </div>
                             <div>
                                 <i class="bi bi-dash"
                                 data-reference="kidQtd"></i>
-                                <span id="kid-qtd" class="border border-primary p-1 rounded">0</span>
+                                <span id="kid-qtd" class="amount-button">0</span>
                                 <i class="bi bi-plus-lg"
                                 data-reference="kidQtd"></i>
                             </div>
                         </div>
                     </div>
                     <div class="card-footer">
-                        <span id="subtotal" class="fs-2 fw-bold price-text">Subtotal: R$100,00</span>
+                        <span id="subtotal" class="fs-3 fw-bold price-text">Subtotal: R$0,00</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <footer style="height: 10rem; background-color: blanchedalmond;">
+
+    </footer>
     
 
 
