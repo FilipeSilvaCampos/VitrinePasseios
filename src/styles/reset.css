@@ -6,12 +6,26 @@
     user-select: none;
 }
 
+.fixed-header{
+    height: 6rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .txt-primary {
     color: #2c64ac;
 }
 
 .txt-secondary{
     color: rgb(211, 137, 0) !important;
+}
+
+
+.backg-secondary{
+    background-color: rgb(211, 137, 0) !important;
 }
 
 .txt-subtitle{

@@ -12,6 +12,23 @@ body a{
         margin-bottom: 0;
     }
 
+.modal-cart{
+    z-index: 10; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+    .modal-inner-cart{
+        width: 90vw;
+        min-width: 10rem;
+        max-width: 30rem;
+    }
+
+.cart-item{
+    width: 100%;
+}
+    .cart-item>div>span{
+        font-size: small;
+    }
+        
 .amount-button{
     border: solid 1px black;
     border-radius: 10px;

@@ -3,13 +3,19 @@ const state = {
         adultQtd: document.getElementById("adult-qtd"),
         kidQtd: document.getElementById('kid-qtd'),
         subTotal: document.getElementById('subtotal'),
-        totalPessoas: document.getElementById('total-pessoas')
+        totalPessoas: document.getElementById('total-pessoas'),
+        priceCard: document.getElementById('priceCard'),
+        fixedTop: document.getElementById('fixed-top'),
+        reserveBtn: document.getElementById('reserve-button'),
+        cartBoxItems: document.getElementById('cart-items'),
+        cartModal: document.getElementById('cart-modal')
     },
 
     values: {
         adultQtd: 0,
         kidQtd: 0,
-        subTotal: 0
+        subTotal: 0,
+        userCart: []
     }
 }
 
@@ -20,12 +26,30 @@ fetch("./src/data.json").then((response) => {
     response.json().then((data) => {
          service = data.servicos[urlParams.get('service')];
 
-         initAmountButtons();
+         state.values.userCart = JSON.parse(localStorage.getItem('userCart')) ?? [];
+         initButtons();
          initViews();
     });
-}) 
+})
 
-  function initAmountButtons() {
+window.onscroll = function () {
+  stickyScroll();
+}
+
+
+  //Functions
+  function initButtons() {
+
+    document.querySelectorAll(".cart-button").forEach((element) => {
+      element.addEventListener('click', function () {
+        state.views.cartModal.style.display = 'flex'
+      })
+    })
+
+    document.getElementById('close-modal-btn').addEventListener('click', function() {
+      state.views.cartModal.style.display = 'none'
+    })
+
     document.querySelectorAll(".bi-dash").forEach((element) => {
         element.addEventListener("click", function() {
             const ref = element.getAttribute('data-reference');
@@ -44,6 +68,25 @@ fetch("./src/data.json").then((response) => {
             calcAmount();
         })
     })
+
+    state.views.cartModal.addEventListener("click", function(event) {
+      if(event.target == state.views.cartModal){
+          state.views.cartModal.style.display = "none";
+      }
+    })
+
+    state.views.reserveBtn.addEventListener('click', function () {
+      const wantedService = {
+        "name": service.name,
+        "adultValue" : service.value,
+        "kidValue": service.kidValue,
+        "adultQtd" : state.values.adultQtd,
+        "kidQtd": state.values.kidQtd
+      }
+    
+      state.values.userCart.push(wantedService);
+      localStorage.setItem('userCart', JSON.stringify(state.values.userCart));
+    })
   }
 
   function initViews() {
@@ -51,7 +94,26 @@ fetch("./src/data.json").then((response) => {
     document.getElementById('kid-value').innerHTML = ToMoneyFormat(service.kidValue);
 
     initCarousel();
+    initCart();
     suplyInfo();
+  }
+
+  function initCart() {
+    state.values.userCart.forEach((element) => {
+       state.views.cartBoxItems.innerHTML += `<div class="cart-item">
+                                                <hr>
+                                                <p class="fw-bold txt-secondary mb-0 fs-6 ps-2">${element.name}:</p>
+                                                <div class="d-flex flex-row justify-content-between ps-5 txt-subtitle">
+                                                    <span>${element.adultQtd}x Adulto</span>
+                                                    <span>${ToMoneyFormat(element.adultValue)}</span>
+                                                </div>
+                                                <div class="d-flex flex-row justify-content-between ps-5 txt-subtitle">
+                                                    <span>${element.kidQtd}x Adulto</span>
+                                                    <span>${ToMoneyFormat(element.kidValue)}</span>
+                                                </div>
+                                                <hr>
+                                            </div>`
+    })
   }
 
   function initCarousel() {
@@ -97,6 +159,19 @@ fetch("./src/data.json").then((response) => {
     document.getElementById('tuor-description').innerHTML = `<p>${service.description}</p>`
   }
 
+  function stickyScroll() {
+      if(window.scrollY <= priceCard.parentElement.offsetHeight - priceCard.offsetHeight) {
+        state.views.priceCard.style.top = window.scrollY + "px";
+      }
+      
+      if(window.scrollY < state.views.fixedTop.offsetHeight)
+      {
+        state.views.fixedTop.classList.add('invisible');
+      } else{
+        state.views.fixedTop.classList.remove('invisible');
+      }
+  }
+
   function calcAmount() {
     state.values.subTotal = (state.values.adultQtd * service.value) + (state.values.kidQtd * service.kidValue);
     state.views.subTotal.innerHTML = "Subtotal: " + ToMoneyFormat(state.values.subTotal);
@@ -106,6 +181,8 @@ fetch("./src/data.json").then((response) => {
     state.views.totalPessoas.innerHTML = adultSt + kidSt;
   }
 
+
+  //Support funcions
   function ToMoneyFormat(string) {
     return string.toLocaleString(undefined, {style: 'currency', currency: 'BRL'})
   }

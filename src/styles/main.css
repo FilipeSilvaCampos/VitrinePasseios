@@ -38,6 +38,13 @@ body ul {
         max-width: 30rem;
     }
 
+.cart-item{
+    width: 100%;
+}
+    .cart-item>div>span{
+        font-size: small;
+    }
+
 .card-body{
     display: flex;
     flex-direction: column;

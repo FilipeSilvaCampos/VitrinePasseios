@@ -4,6 +4,8 @@ const cartBtn = document.getElementById("cart-btn")
 const cartTotal =document.getElementById("cart-total")
 const checkoutBtn = document.getElementById("check-out-btn")
 const closeModalBtn = document.getElementById("close-modal-btn")
+const fixedTop = document.getElementById('fixed-top')
+const cartBoxItems = document.getElementById('cart-items')
 
 fetch("./src/data.json").then((response) => {
     response.json().then((data) => {
@@ -26,10 +28,16 @@ fetch("./src/data.json").then((response) => {
     });
 })
 
+window.onscroll = function() {
+    stickyScroll();
+}
+
 //Open cart modal
-cartBtn.addEventListener("click", function() {
-    cartModal.style.display = "flex";
-})
+document.querySelectorAll(".cart-button").forEach((element) => {
+    element.addEventListener('click', function () {
+      cartModal.style.display = 'flex'
+    })
+  })
 
 //Close cart modal
 cartModal.addEventListener("click", function(event) {
@@ -41,6 +49,9 @@ cartModal.addEventListener("click", function(event) {
 closeModalBtn.addEventListener("click", function() {
     cartModal.style.display = "none";
 })
+
+// Isert cart itens
+initCart();
 
 function createTuorCard(service, id) {
     return `<div class="card" style="border-radius: 20px; min-height: 21rem;"
@@ -67,3 +78,37 @@ function createAtractiveElements(atractiveList) {
     }
     return element + "</div>";
 }
+
+function initCart() {
+    const userCart = JSON.parse(localStorage.getItem('userCart')) ?? []
+
+    userCart.forEach((element) => {
+       cartBoxItems.innerHTML += `<div class="cart-item">
+                                                <hr>
+                                                <p class="fw-bold txt-secondary mb-0 fs-6 ps-2">${element.name}:</p>
+                                                <div class="d-flex flex-row justify-content-between ps-5 txt-subtitle">
+                                                    <span>${element.adultQtd}x Adulto</span>
+                                                    <span>${ToMoneyFormat(element.adultValue)}</span>
+                                                </div>
+                                                <div class="d-flex flex-row justify-content-between ps-5 txt-subtitle">
+                                                    <span>${element.kidQtd}x Adulto</span>
+                                                    <span>${ToMoneyFormat(element.kidValue)}</span>
+                                                </div>
+                                                <hr>
+                                            </div>`
+    })
+}
+
+function stickyScroll() {
+    if(window.scrollY < fixedTop.offsetHeight)
+    {
+        fixedTop.classList.add('invisible');
+    } else{
+        fixedTop.classList.remove('invisible');
+    }
+}
+
+//Support functions
+function ToMoneyFormat(string) {
+    return string.toLocaleString(undefined, {style: 'currency', currency: 'BRL'})
+  }
