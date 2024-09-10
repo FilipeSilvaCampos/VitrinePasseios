@@ -14,12 +14,11 @@ fetch("./src/data.json").then((response) => {
             gridRow += `<div class="col-md-3 p-2">
                             ${createTuorCard(data.servicos[i], i)}
                         </div>`;
-            if(i/4 == 1) {
-                gridRow += "</div>"
-                tuorGrid.innerHTML += gridRow;
-                gridRow = '<div class="row">';
-            }
         }
+        gridRow += "</div>";
+        tuorGrid.innerHTML += gridRow;
+        gridRow = '<div class="row">';
+
         document.querySelectorAll(".card").forEach((card) => {
             card.addEventListener("click", function() {
                 window.open(`./service.html?service=${card.getAttribute('data-serviceIndex')}`, "_self")

@@ -186,18 +186,21 @@
             "description": "Destino de aproximadamente 80km, cerca de 1h30 de viagem. Iniciamos o passeio com destino direto à praia dos Coqueiros, onde permanecemos por 4h numa cabana de praia completa para um confortável dia. Vale a pena considerar uma caminhada de 10min para conhecer também a Praia dos Nativos, onde fica a famosa casinha do pescador. A segunda etapa do passeio é no charmoso quadrado de Trancoso. O guia que os acompanha compartilha ricas informações sobre a comunidade, sua história, a igreja São João Batista e muito mais. Vocês vão se apaixonar pelo centro histórico de lá, é simplesmente encantador. Após, no retorno aos hotéis, temos duas paradas, uma em Vale verde, para esticarmos as pernas, degustarmos as famosas cachaças da região e também as deliciosas cocadas e doces produzidos pela comunidade. E a segunda, numa fabrica de chocolate, para conhecer de perto a tão importante fruta que fez história na Bahia, o CACAU."
         },
         {
-            "cardImg" : "./src/imgs/servicos/trancoso/trancoso_card.jpg",
+            "name": "Coroa Alta",
+            "cardImg" : "./src/imgs/servicos/coroa_alta/coroa_alta_card.jpg",
             "viewImgs": [
                 {
-                    "path": "./src/imgs/servicos/trancoso/trancoso_A.jpeg"
+                    "path": "./src/imgs/servicos/coroa_alta/coroa_alta_A.jpg"
                 },
                 {
-                    "path": "./src/imgs/servicos/trancoso/trancoso_B.jpeg"
+                    "path": "./src/imgs/servicos/coroa_alta/coroa_alta_B.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/coroa_alta/coroa_alta_C.jpg"
                 }
             ],
-            "name": "Trancoso",
-            "value": 80.00,
-            "kidValue": 70.00,
+            "value": 130.00,
+            "kidValue": 100.00,
             "preBooking" : 20.00,
             "type": 0,
             "remarks": [
@@ -205,13 +208,13 @@
                     "content": "<b>Horario:</b> 7h40 a 8h40."
                 },
                 {
-                    "content": "<b>Duração:</b> 08 horas de passeio."
+                    "content": "<b>Duração:</b> Retorno: 17h."
                 },
                 {
-                    "content": "<b>Saidas:</b> Todos os dias."
+                    "content": "<b>Saidas:</b> De segunda a sabado."
                 },
                 {
-                    "content": "<b>Viagem longa: </b>Aproximandente 80km. cerca de 1h30 de viagem."
+                    "content": "<b>Passeio de Escuna: </b>Podera ser cancelado sem aviso prévio, pela capitania dos portos."
                 }
             ],
             "atractives": [
@@ -221,17 +224,212 @@
                     "description": "Lugares incriveis para tirar foto"
                 },
                 {
-                    "iconClass": "bi-check-circle",
-                    "title": "Quadrado do trancoso",
-                    "description": "Tuor no vilarejo mais famoso da bahia"
+                    "iconClass": "bi-flower3",
+                    "title": "Interação com os pataxós",
+                    "description": "Apresentações e danças indigenas"
                 },
                 {
-                    "iconClass": "bi-whatsapp",
-                    "title": "Atendimento personalizado",
-                    "description": "Tire suas duvidas com um especialista"
+                    "iconClass": "bi-brightness-alt-high",
+                    "title": "Ilha do Sol",
+                    "description": "Degustação de doces e licores artesanais"
                 }
             ],
-            "description": "Destino de aproximadamente 80km, cerca de 1h30 de viagem. Iniciamos o passeio com destino direto à praia dos Coqueiros, onde permanecemos por 4h numa cabana de praia completa para um confortável dia. Vale a pena considerar uma caminhada de 10min para conhecer também a Praia dos Nativos, onde fica a famosa casinha do pescador. A segunda etapa do passeio é no charmoso quadrado de Trancoso. O guia que os acompanha compartilha ricas informações sobre a comunidade, sua história, a igreja São João Batista e muito mais. Vocês vão se apaixonar pelo centro histórico de lá, é simplesmente encantador. Após, no retorno aos hotéis, temos duas paradas, uma em Vale verde, para esticarmos as pernas, degustarmos as famosas cachaças da região e também as deliciosas cocadas e doces produzidos pela comunidade. E a segunda, numa fabrica de chocolate, para conhecer de perto a tão importante fruta que fez história na Bahia, o CACAU."
+            "description": "A caminho de Santa Cruz Cabrália, cidade vizinha de Porto Seguro, a 1º parada é em Coroa Vermelha. Somos recebidos pelos indigenas de etnia Pataxó, que compartilham as riquezas de sua cultura através de uma breve apresentação e dança. Após, seguimos o passeio até Santa Cruz Cabrália onde embarcarmos na escuna que nos leva até Coroa Alta, banco de fragmentos de corais e areia, com piscina natural que nos permite conhecer um pouco mais da vida marinha. Permanecemos.<br> Te seguimos pelo rio até o Restaurante Berimbal que providencia um delicioso almoço (a parte). Depois da refeição, voltamos à escuna e seguimos passeio até a Ilha do Sol. Lá teremos dezenas de opções de doces, cachaças, licores, e claro, oportunidade do famoso banho de lama no manguezal."
+        },
+        {
+            "name": "Quadriciclo",
+            "cardImg" : "./src/imgs/servicos/quadriciclo/quadriciclo_card.jpg",
+            "viewImgs": [
+                {
+                    "path": "./src/imgs/servicos/quadriciclo/quadriciclo_A.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/quadriciclo/quadriciclo_B.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/quadriciclo/quadriciclo_C.jpg"
+                }
+            ],
+            "value": 280.00,
+            "kidValue": 280.00,
+            "preBooking" : 40.00,
+            "type": 0,
+            "remarks": [
+                {
+                    "content": "<b>Horario:</b> Manhã ou tarde, a combinar."
+                },
+                {
+                    "content": "<b>Duração:</b> 2h30."
+                },
+                {
+                    "content": "<b>Saidas:</b> De segunda a sabado."
+                },
+                {
+                    "content": "<b>Maquina para 2 pessoas: </b>O valor pago é pelo alguel da maquina."
+                }
+            ],
+            "atractives": [
+                {
+                    "iconClass": "bi-camera",
+                    "title": "Cenarios Incriveis",
+                    "description": "Lugares incriveis para tirar foto"
+                },
+                {
+                    "iconClass": "bi-cup-straw",
+                    "title": "Degustação de acaí",
+                    "description": "Finalizado com uma deliciosa degustação de creme de cupuaçu e açaí."
+                },
+                {
+                    "iconClass": "bi-rainbow",
+                    "title": "Banho de cascata",
+                    "description": "banho de cascata com um deck para fotos diante do rio e no alto do mirante."
+                }
+            ],
+            "description": "Onde estão os aventureiros que amam a liberdade e o vento no rosto? Nosso passeio começa na base Fazenda Bom Sossego. Trata-se de uma fazenda de plantações de açai, cupuaçú e coco. As trilhas acontecem em trechos da Mata Atlantica e em meio as grandes plantações. Temos parada para degustação do Cupuaçu 100% natural e curiosidades sobre o plantio. Realizamos também uma parada para banho numa cascata perfeita, com deck para fotos em frente ao río e também no alto do mirante. No retorno, uma deliciosa degustação de creme de cupuaçu e acai, finalizamos assim, com chave de ouro."
+        },
+        {
+            "name": "Praia das Bobocas",
+            "cardImg" : "./src/imgs/servicos/bobocas/bobocas_card.jpg",
+            "viewImgs": [
+                {
+                    "path": "./src/imgs/servicos/bobocas/bobocas_A.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/bobocas/bobocas_B.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/bobocas/bobocas_C.jpg"
+                }
+            ],
+            "value": 90.00,
+            "kidValue": 80.00,
+            "preBooking" : 20.00,
+            "type": 0,
+            "remarks": [
+                {
+                    "content": "<b>Horario:</b> 7h30 a 8h30."
+                },
+                {
+                    "content": "<b>Duração:</b> Retorno: 17h."
+                },
+                {
+                    "content": "<b>Saidas:</b> Às quintas."
+                }
+            ],
+            "atractives": [
+                {
+                    "iconClass": "bi-camera",
+                    "title": "Cenarios Incriveis",
+                    "description": "Lugares incriveis para tirar foto"
+                },
+                {
+                    "iconClass": "bi-sort-up-alt",
+                    "title": "Imagem de Santo Antônio",
+                    "description": "Visita a segunda maior imagem de Santo Antonio no mundo."
+                },
+                {
+                    "iconClass": "bi-signpost-split",
+                    "title": "Refugio de sossego",
+                    "description": "Areias douradas, mar tranquilo e gastronomia premiada"
+                }
+            ],
+            "description": "Iniciamos o passeio com uma deliciosa travessia de balsa pelo Rio João de Tiba. Percorremos alguns km até Santo Antônio onde permanecemos por 4h na tranquila e reservada praia da Boboca. Conhecida por suas areias douradas, mar manso e total sossego, a praia da Boboca encanta com sua beleza e tranquilidade. Não há ambulantes e nem comércio por perto, tornando-a perfeita para quem busca privacidade. Contamos com um ponto de apoio que dispõe de toda estrutura necessária para um confortável dia de praia e mais, uma excelente gastronomia, inclusive premiada com pratos considerados os melhores da Bahia! Após praia, visitamos a 2º maior imagem de Sto Antônio no mundo. São aproximadamente 16m de altura. Finalizamos na Vila de Santo André, com um café e degustação das cocadas mais famosas do Brasil, de Dona Lete."
+        },
+        {
+            "name": "Arraial Noite",
+            "cardImg" : "./src/imgs/servicos/arraial_noite/arraial_noite_card.jpg",
+            "viewImgs": [
+                {
+                    "path": "./src/imgs/servicos/arraial_noite/arraial_noite_A.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/arraial_noite/arraial_noite_B.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/arraial_noite/arraial_noite_C.jpg"
+                }
+            ],
+            "value": 85.00,
+            "kidValue": 75.00,
+            "preBooking" : 20.00,
+            "type": 0,
+            "remarks": [
+                {
+                    "content": "<b>Horario:</b> 19h a 19h20."
+                },
+                {
+                    "content": "<b>Duração:</b> Retorno: Quinta(1h00), sexta e sabado(0h00)."
+                },
+                {
+                    "content": "<b>Saidas:</b> qui, sex e sab."
+                }
+            ],
+            "atractives": [
+                {
+                    "iconClass": "bi-camera",
+                    "title": "Cenarios Incriveis",
+                    "description": "Lugares incriveis para tirar foto"
+                },
+                {
+                    "iconClass": "bi-shop",
+                    "title": "Rua do Mucugê",
+                    "description": "Conhecida como a rua mais charmosa do Brasil."
+                },
+                {
+                    "iconClass": "bi-pin-map",
+                    "title": "Broduei",
+                    "description": "Caminhada pela esquina cultural da Bahia, e visita à praça da igreja"
+                }
+            ],
+            "description": "Após saída do hotel, iniciamos a noite com uma gostosa travessia de balsa pelo Rio Buranhém, com duração aproximada de 12 minutos. Seguimos via terrestre para a rua mais charmosa do Brasil, a famosa Rua Mucugê, repleta de restaurantes, lojas, bares e praças de alimentação com muita arte e música ao vivo. Vale muito a pena caminhar pela rua 'broduei', a nossa esquina do mundo na Bahia. Conhecer também a praça da igreja que a noite também é linda!"
+        },
+        {
+            "name": "Mergulho de Cilindro",
+            "cardImg" : "./src/imgs/servicos/cilindro/cilindro_card.jpg",
+            "viewImgs": [
+                {
+                    "path": "./src/imgs/servicos/cilindro/cilindro_A.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/cilindro/cilindro_B.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/cilindro/cilindro_C.jpg"
+                }
+            ],
+            "value": 200.00,
+            "kidValue": 140.00,
+            "preBooking" : 40.00,
+            "type": 0,
+            "remarks": [
+                {
+                    "content": "<b>Horario:</b> 8h00."
+                },
+                {
+                    "content": "<b>Duração:</b> Retorno: 14h aproximadamente."
+                },
+                {
+                    "content": "<b>Saidas:</b> Todos os dias."
+                }
+            ],
+            "atractives": [
+                {
+                    "iconClass": "bi-person",
+                    "title": "Experiência Personalizada",
+                    "description": "Cada dupla de mergulhadores e acompanha por um instrutor."
+                },
+                {
+                    "iconClass": "bi-pencil",
+                    "title": "Navegação e Instruções de Mergulho",
+                    "description": "Os profissionais passam todas as instruções necessárias para um mergulho seguro"
+                },
+                {
+                    "iconClass": "bi-binoculars",
+                    "title": "Vida Marinha",
+                    "description": "Mergulhe com os peixes e aprecie a beleza dos corais."
+                }
+            ],
+            "description": "Bora conhecer Porto Seguro debaixo d'água? A embarcação desse passeio sai do pier da balsa e durante a navegação de aproximadamente 50 minutos, os mergulhadores passarão todas as instruções necessárias para um mergulho tranquilo, seguro e muito gostoso! Serão distribuídas as roupas de Neoprene, apresentados os equipamentos e testados em vocês para que se familiarizem e vejam o quão fácil é respirar com eles. A embarcação conta com uma tripulação completa e instrutores super alto astral, o que não poderia ser diferente, né? As caidas na água são sempre em dupla, um instrutor para cada dupla. Caso queiram, poderão solicitar as fotos submersas feitas pelos mergulhadores, lá eles explicarão como reservar.<br><br> Bom mergulho!"
         }
     ]
 }
