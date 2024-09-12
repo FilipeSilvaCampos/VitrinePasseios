@@ -2,25 +2,28 @@
     "servicos": [
         {
             "name": "Praia do Espelho",
-            "cardImg": "./src/imgs/servicos/espelho/card_espelho.jpg",
+            "cardImg": "./src/imgs/servicos/espelho/espelho_card.jpg",
             "viewImgs": [
                 {
-                    "path": "./src/imgs/servicos/espelho/espelho_A.jpeg"
+                    "path": "./src/imgs/servicos/espelho/espelho_A.jpg"
                 },
                 {
-                    "path": "./src/imgs/servicos/espelho/espelho_B.jpeg"
+                    "path": "./src/imgs/servicos/espelho/espelho_B.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/espelho/espelho_C.jpg"
                 }
             ],
             "value": 100.00,
             "kidValue": 90.00,
-            "preBooking" : 30.00,
+            "preBooking" : 20.00,
             "type": 0,
             "remarks": [
                 {
                     "content": "<b>Horario:</b> 7h40 a 8h40."
                 },
                 {
-                    "content": "<b>Duração:</b> 08 horas de passeio."
+                    "content": "<b>Duração:</b> Retorno: 17h."
                 },
                 {
                     "content": "<b>Saidas:</b> Todos os dias."
@@ -50,10 +53,13 @@
             "cardImg" : "./src/imgs/servicos/trancoso/trancoso_card.jpg",
             "viewImgs": [
                 {
-                    "path": "./src/imgs/servicos/trancoso/trancoso_A.jpeg"
+                    "path": "./src/imgs/servicos/trancoso/trancoso_A.jpg"
                 },
                 {
-                    "path": "./src/imgs/servicos/trancoso/trancoso_B.jpeg"
+                    "path": "./src/imgs/servicos/trancoso/trancoso_B.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/trancoso/trancoso_C.jpg"
                 }
             ],
             "value": 80.00,
@@ -65,7 +71,7 @@
                     "content": "<b>Horario:</b> 7h40 a 8h40."
                 },
                 {
-                    "content": "<b>Duração:</b> 08 horas de passeio."
+                    "content": "<b>Duração:</b> Retorno: 17h."
                 },
                 {
                     "content": "<b>Saidas:</b> Todos os dias."
@@ -95,13 +101,16 @@
         },
         {
             "name": "Arraial D'Ajuda",
-            "cardImg" : "./src/imgs/servicos/trancoso/trancoso_card.jpg",
+            "cardImg" : "./src/imgs/servicos/arraial/arraial_card.jpg",
             "viewImgs": [
                 {
-                    "path": "./src/imgs/servicos/trancoso/trancoso_A.jpeg"
+                    "path": "./src/imgs/servicos/arraial/arraial_A.jpg"
                 },
                 {
-                    "path": "./src/imgs/servicos/trancoso/trancoso_B.jpeg"
+                    "path": "./src/imgs/servicos/arraial/arraial_B.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/arraial/arraial_C.jpg"
                 }
             ],
             "value": 85.00,
@@ -113,7 +122,7 @@
                     "content": "<b>Horario:</b> 7h40 a 8h40."
                 },
                 {
-                    "content": "<b>Duração:</b> 08 horas de passeio."
+                    "content": "<b>Duração:</b> Retorno: 17h."
                 },
                 {
                     "content": "<b>Saidas:</b> Todos os dias."
@@ -126,26 +135,30 @@
                     "description": "Lugares incriveis para tirar foto"
                 },
                 {
-                    "iconClass": "bi-check-circle",
-                    "title": "Quadrado do trancoso",
-                    "description": "Tuor no vilarejo mais famoso da bahia"
+                    "iconClass": "bi-brightness-high",
+                    "title": "Travessia de Balsa e Praia",
+                    "description": "Parada de 4 horas na praia"
                 },
                 {
-                    "iconClass": "bi-whatsapp",
-                    "title": "Atendimento personalizado",
-                    "description": "Tire suas duvidas com um especialista"
+                    "iconClass": "bi-signpost-split",
+                    "title": "'Bróduei'",
+                    "description": "Rua cultural, onde arte, história e gastronomia se encontram"
                 }
             ],
-            "description": "Destino de aproximadamente 80km, cerca de 1h30 de viagem. Iniciamos o passeio com destino direto à praia dos Coqueiros, onde permanecemos por 4h numa cabana de praia completa para um confortável dia. Vale a pena considerar uma caminhada de 10min para conhecer também a Praia dos Nativos, onde fica a famosa casinha do pescador. A segunda etapa do passeio é no charmoso quadrado de Trancoso. O guia que os acompanha compartilha ricas informações sobre a comunidade, sua história, a igreja São João Batista e muito mais. Vocês vão se apaixonar pelo centro histórico de lá, é simplesmente encantador. Após, no retorno aos hotéis, temos duas paradas, uma em Vale verde, para esticarmos as pernas, degustarmos as famosas cachaças da região e também as deliciosas cocadas e doces produzidos pela comunidade. E a segunda, numa fabrica de chocolate, para conhecer de perto a tão importante fruta que fez história na Bahia, o CACAU."
-        },{
+            "description": "Começamos esse roteiro com uma deliciosa travessia de balsa de 12 minutos pelo Rio Buranhém e seguimos direto à praia. Sabia que algumas das praias de Arraial D'Ajuda são áreas de desova de tartarugas marinhas? Atente-se as informações do guia pois além dessa tem muito mais. A 1ª parada acontece na praia, com permanência de 4h. Depois seguimos para a charmosa Vila de Nossa Senhora D'ajuda para conhecer o famoso mirante das fitas, fonte de água da santa, rua 'bróduei' e claro, a linda igreja de nossa padroeira. O Arraial d'Ajuda é puro charme e repleto de belezas naturais. Bora conhecer?"
+        },
+        {
             "name": "Coroa Vermelha",
-            "cardImg" : "./src/imgs/servicos/trancoso/trancoso_card.jpg",
+            "cardImg" : "./src/imgs/servicos/coroa_vermelha/coroa_card.jpg",
             "viewImgs": [
                 {
-                    "path": "./src/imgs/servicos/trancoso/trancoso_A.jpeg"
+                    "path": "./src/imgs/servicos/coroa_vermelha/coroa_A.jpg"
                 },
                 {
-                    "path": "./src/imgs/servicos/trancoso/trancoso_B.jpeg"
+                    "path": "./src/imgs/servicos/coroa_vermelha/coroa_B.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/coroa_vermelha/coroa_C.jpg"
                 }
             ],
             "value": 60.00,
@@ -157,13 +170,10 @@
                     "content": "<b>Horario:</b> 7h40 a 8h40."
                 },
                 {
-                    "content": "<b>Retorno:</b> 15h00."
+                    "content": "<b>Retorno:</b> 15h."
                 },
                 {
                     "content": "<b>Saidas:</b> Segunda, quarta e sexta"
-                },
-                {
-                    "content": "<b>Viagem longa: </b>Aproximandente 80km. cerca de 1h30 de viagem."
                 }
             ],
             "atractives": [
@@ -173,17 +183,17 @@
                     "description": "Lugares incriveis para tirar foto"
                 },
                 {
-                    "iconClass": "bi-check-circle",
-                    "title": "Quadrado do trancoso",
-                    "description": "Tuor no vilarejo mais famoso da bahia"
+                    "iconClass": "bi-translate",
+                    "title": "Visita à Aldeia Pataxó",
+                    "description": "Os Pataxós recebem os visitantes com uma apresentação em sua língua, Patxohã"
                 },
                 {
                     "iconClass": "bi-whatsapp",
-                    "title": "Atendimento personalizado",
-                    "description": "Tire suas duvidas com um especialista"
+                    "title": "Passarela Indígena",
+                    "description": " Explorare o comércio da passarela indígena"
                 }
             ],
-            "description": "Destino de aproximadamente 80km, cerca de 1h30 de viagem. Iniciamos o passeio com destino direto à praia dos Coqueiros, onde permanecemos por 4h numa cabana de praia completa para um confortável dia. Vale a pena considerar uma caminhada de 10min para conhecer também a Praia dos Nativos, onde fica a famosa casinha do pescador. A segunda etapa do passeio é no charmoso quadrado de Trancoso. O guia que os acompanha compartilha ricas informações sobre a comunidade, sua história, a igreja São João Batista e muito mais. Vocês vão se apaixonar pelo centro histórico de lá, é simplesmente encantador. Após, no retorno aos hotéis, temos duas paradas, uma em Vale verde, para esticarmos as pernas, degustarmos as famosas cachaças da região e também as deliciosas cocadas e doces produzidos pela comunidade. E a segunda, numa fabrica de chocolate, para conhecer de perto a tão importante fruta que fez história na Bahia, o CACAU."
+            "description": "Nesse passeio, visitamos uma aldeia indigena e somos recebidos em Patxohā pelos Pataxós, que compartilham as riquezas de sua cultura através de uma breve apresentação com história e curiosidades, lindos artesanatos, dança e convite para quem quiser participar. Após 40 minutos de permanência na tribo, vamos à Praia de Coroa Vermelha, famosa por suas águas quentes e claras. Permanecemos por 4h numa estrutura com todo necessário para um confortável dia. Após o tempo de praia, temos 1h de passeio livre para explorar o comércio da passarela indigena. Ótima opção de compra, com muitas variedades e excelentes preços. Finalizamos retornando aos hotéis."
         },
         {
             "name": "Coroa Alta",
@@ -430,6 +440,165 @@
                 }
             ],
             "description": "Bora conhecer Porto Seguro debaixo d'água? A embarcação desse passeio sai do pier da balsa e durante a navegação de aproximadamente 50 minutos, os mergulhadores passarão todas as instruções necessárias para um mergulho tranquilo, seguro e muito gostoso! Serão distribuídas as roupas de Neoprene, apresentados os equipamentos e testados em vocês para que se familiarizem e vejam o quão fácil é respirar com eles. A embarcação conta com uma tripulação completa e instrutores super alto astral, o que não poderia ser diferente, né? As caidas na água são sempre em dupla, um instrutor para cada dupla. Caso queiram, poderão solicitar as fotos submersas feitas pelos mergulhadores, lá eles explicarão como reservar.<br><br> Bom mergulho!"
+        },
+        {
+            "name": "Caraiva",
+            "cardImg" : "./src/imgs/servicos/caraiva/caraiva_card.jpg",
+            "viewImgs": [
+                {
+                    "path": "./src/imgs/servicos/caraiva/caraiva_A.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/caraiva/caraiva_B.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/caraiva/caraiva_C.jpg"
+                }
+            ],
+            "value": 130.00,
+            "kidValue": 115.00,
+            "preBooking" : 30.00,
+            "type": 0,
+            "remarks": [
+                {
+                    "content": "<b>Horario:</b> 7h30 a 8h30."
+                },
+                {
+                    "content": "<b>Duração:</b> Retorno: 17h."
+                },
+                {
+                    "content": "<b>Saidas:</b> Ter, quin e sab."
+                },
+                {
+                    "content": "<b>Sem canoa:</b> Não inclui passeio canoa."
+                }
+            ],
+            "atractives": [
+                {
+                    "iconClass": "bi-camera",
+                    "title": "Cenarios Incriveis",
+                    "description": "Lugares incriveis para tirar foto"
+                },
+                {
+                    "iconClass": "bi-binoculars",
+                    "title": "Exploração da vila",
+                    "description": "O guia nos conduz pelos principais pontos turísticos e te da 4h livres para explorar"
+                },
+                {
+                    "iconClass": "bi-cookie",
+                    "title": "Parada em Vale Verde",
+                    "description": "Degustação de cachaças, cocadas e doces produzidos pela comunidade local."
+                }
+            ],
+            "description": "Caraiva é aquele passeio que parece nos levar para outra dimensão.<br><br> Là nào hà carros, trânsito, barulho ou pressa. Caraiva é sinônimo de sossego e contato total com a natureza. O percurso è de aproximadamente 120km, sendo 50min de asfalto e 1h40min de estrada de terra. Na chegada, desembarcamos da van e realizamos uma deliciosa travessia de canca até a Vila. A travessia é rápida e muito gostosa. O guia apresenta na Vila os principais pontos turisticos: a famosa casinha do 'Sorria, você está em Caraiva', a barra do ria, a Igreja de São Sebastião e o caminho à praia. A permanencia na vila é 4h. No retorno, realizamos uma parada em Vale verde, para esticarmos as pernas, degustarmos as famosas cachaças da região e também as deliciosas cocadas e doces produzidos pela comunidade. Depois, direto ao hotel."
+        },
+        {
+            "name": "Recife de fora",
+            "cardImg" : "./src/imgs/servicos/recife/recife_card.jpg",
+            "viewImgs": [
+                {
+                    "path": "./src/imgs/servicos/recife/recife_A.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/recife/recife_B.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/recife/recife_C.jpg"
+                }
+            ],
+            "value": 150.00,
+            "kidValue": 85.00,
+            "preBooking" : 40.00,
+            "type": 0,
+            "remarks": [
+                {
+                    "content": "<b>Horario:</b> De acordo com a tábua das mares."
+                },
+                {
+                    "content": "<b>Duração:</b> De acordo com a tábua das mares."
+                },
+                {
+                    "content": "<b>Saidas:</b> De acorodo com a tábua das mares."
+                },
+                {
+                    "content": "<b>Sem transfer:</b> Com transfer a consultar."
+                },
+                {
+                    "content": "<b>Podera ser cancelado pela marinha:</b> Conforme condições climaticas."
+                }
+            ],
+            "atractives": [
+                {
+                    "iconClass": "bi-camera",
+                    "title": "Cenarios Incriveis",
+                    "description": "Lugares incriveis para tirar foto."
+                },
+                {
+                    "iconClass": "bi-emoji-smile",
+                    "title": "Piscinas Naturais e Snorkel",
+                    "description": "2 horas nas piscinas naturais onde é possivel observar a vida marinha."
+                },
+                {
+                    "iconClass": "bi-stars",
+                    "title": "Aula sobre Vida Marinha",
+                    "description": "Durante o passeio, há uma aula sobre a vida marinha local."
+                }
+            ],
+            "description": "O parque Marinho Recife de Fora é composto por ecossistema recifal que abrange uma área de 19,68 km³, a maior da Costa do descobrimento e 3° maior do Brasil. Partindo do pier municipal, realizamos uma navegação de 50 minutos, acompanhados da tripulação, guia e fotógrafos. O passeio tem duração aproximada de 4 horas e a permanência nas piscinas naturais é de 2 horas. Realizamos o passeio de acordo com a tábua de marés, no recuo das águas. Quando se formam as piscinas naturais, podemos com o uso do snorkel (incluso no passeio) flutuar e contemplar a beleza dessa biodiversidade. Há também uma breve apresentação do parque na chegada.<br><br>E dada uma aula de sabedoria nativa sobre a vida marinha. Explorem o conhecimento dessas pessoas e desfrutem o privilégio de vivenciar o contato direto com a natureza."
+        },
+        {
+            "name": "Recife de fora",
+            "cardImg" : "./src/imgs/servicos/recife/recife_card.jpg",
+            "viewImgs": [
+                {
+                    "path": "./src/imgs/servicos/recife/recife_A.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/recife/recife_B.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/recife/recife_C.jpg"
+                }
+            ],
+            "value": 150.00,
+            "kidValue": 85.00,
+            "preBooking" : 40.00,
+            "type": 0,
+            "remarks": [
+                {
+                    "content": "<b>Horario:</b> De acordo com a tábua das mares."
+                },
+                {
+                    "content": "<b>Duração:</b> De acordo com a tábua das mares."
+                },
+                {
+                    "content": "<b>Saidas:</b> De acorodo com a tábua das mares."
+                },
+                {
+                    "content": "<b>Sem transfer:</b> Com transfer a consultar."
+                },
+                {
+                    "content": "<b>Podera ser cancelado pela marinha:</b> Conforme condições climaticas."
+                }
+            ],
+            "atractives": [
+                {
+                    "iconClass": "bi-camera",
+                    "title": "Cenarios Incriveis",
+                    "description": "Lugares incriveis para tirar foto."
+                },
+                {
+                    "iconClass": "bi-emoji-smile",
+                    "title": "Piscinas Naturais e Snorkel",
+                    "description": "2 horas nas piscinas naturais onde é possivel observar a vida marinha."
+                },
+                {
+                    "iconClass": "bi-stars",
+                    "title": "Aula sobre Vida Marinha",
+                    "description": "Durante o passeio, há uma aula sobre a vida marinha local."
+                }
+            ],
+            "description": "O parque Marinho Recife de Fora é composto por ecossistema recifal que abrange uma área de 19,68 km³, a maior da Costa do descobrimento e 3° maior do Brasil. Partindo do pier municipal, realizamos uma navegação de 50 minutos, acompanhados da tripulação, guia e fotógrafos. O passeio tem duração aproximada de 4 horas e a permanência nas piscinas naturais é de 2 horas. Realizamos o passeio de acordo com a tábua de marés, no recuo das águas. Quando se formam as piscinas naturais, podemos com o uso do snorkel (incluso no passeio) flutuar e contemplar a beleza dessa biodiversidade. Há também uma breve apresentação do parque na chegada.<br><br>E dada uma aula de sabedoria nativa sobre a vida marinha. Explorem o conhecimento dessas pessoas e desfrutem o privilégio de vivenciar o contato direto com a natureza."
         }
     ]
 }

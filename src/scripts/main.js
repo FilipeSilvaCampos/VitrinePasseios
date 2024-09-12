@@ -1,7 +1,9 @@
+const userCart = JSON.parse(localStorage.getItem('userCart')) ?? [];
+
 const tuorGrid = document.getElementById("tuor-grid")
 const cartModal = document.getElementById("cart-modal")
 const cartBtn = document.getElementById("cart-btn")
-const cartTotal =document.getElementById("cart-total")
+const cartTotalView =document.getElementById("cart-total")
 const checkoutBtn = document.getElementById("check-out-btn")
 const closeModalBtn = document.getElementById("close-modal-btn")
 const fixedTop = document.getElementById('fixed-top')
@@ -50,7 +52,7 @@ closeModalBtn.addEventListener("click", function() {
 })
 
 // Isert cart itens
-initCart();
+drawCartItems();
 
 function createTuorCard(service, id) {
     return `<div class="card" style="border-radius: 20px; min-height: 21rem;"
@@ -78,13 +80,19 @@ function createAtractiveElements(atractiveList) {
     return element + "</div>";
 }
 
-function initCart() {
-    const userCart = JSON.parse(localStorage.getItem('userCart')) ?? []
-
+function drawCartItems() {
+    cartBoxItems.innerHTML = '';
+    let i = 0;
+    let cartTotal = 0;
     userCart.forEach((element) => {
-       cartBoxItems.innerHTML += `<div class="cart-item">
+        cartBoxItems.innerHTML += `<div class="cart-item">
                                                 <hr>
-                                                <p class="fw-bold txt-secondary mb-0 fs-6 ps-2">${element.name}:</p>
+                                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                                    <p class="fw-bold txt-secondary mb-0 fs-6 ps-2">${element.name}:</p>
+                                                    <i class="bi bi-x fs-4 text-danger cart-item-remover"
+                                                       data-elementIndex="${i}">
+                                                    </i>
+                                                </div>
                                                 <div class="d-flex flex-row justify-content-between ps-5 txt-subtitle">
                                                     <span>${element.adultQtd}x Adulto</span>
                                                     <span>${ToMoneyFormat(element.adultValue)}</span>
@@ -93,9 +101,28 @@ function initCart() {
                                                     <span>${element.kidQtd}x Adulto</span>
                                                     <span>${ToMoneyFormat(element.kidValue)}</span>
                                                 </div>
+                                                <div class="w-100 d-flex justify-content-end mt-2">
+                                                    <span>Total: ${ToMoneyFormat(element.total)}</span>
+                                                </div>
                                                 <hr>
                                             </div>`
+        i++;
+        cartTotal += element.total;
     })
+
+    cartTotalView.innerHTML = ToMoneyFormat(cartTotal);
+    addCartItemBehavior();
+}
+
+function addCartItemBehavior() {
+    document.querySelectorAll('.cart-item-remover').forEach((element => {
+        element.addEventListener('click', function() {
+            const index = element.getAttribute('data-elementIndex');
+            userCart.splice(index, 1);
+            drawCartItems();
+            localStorage.setItem('userCart', JSON.stringify(state.values.userCart))
+        })
+    }))
 }
 
 function stickyScroll() {

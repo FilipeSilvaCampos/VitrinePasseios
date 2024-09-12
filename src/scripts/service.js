@@ -8,11 +8,13 @@ const state = {
         fixedTop: document.getElementById('fixed-top'),
         reserveBtn: document.getElementById('reserve-button'),
         cartBoxItems: document.getElementById('cart-items'),
-        cartModal: document.getElementById('cart-modal')
+        cartModal: document.getElementById('cart-modal'),
+        cartTotal: document.getElementById('cart-total')
     },
 
     values: {
         adultQtd: 0,
+        cartTotal: 0,
         kidQtd: 0,
         subTotal: 0,
         userCart: []
@@ -81,11 +83,14 @@ window.onscroll = function () {
         "adultValue" : service.value,
         "kidValue": service.kidValue,
         "adultQtd" : state.values.adultQtd,
-        "kidQtd": state.values.kidQtd
+        "kidQtd": state.values.kidQtd,
+        "total": state.values.subTotal
       }
     
       state.values.userCart.push(wantedService);
       localStorage.setItem('userCart', JSON.stringify(state.values.userCart));
+      drawCartItems();
+      state.views.cartModal.style.display = 'flex';
     })
   }
 
@@ -94,15 +99,23 @@ window.onscroll = function () {
     document.getElementById('kid-value').innerHTML = ToMoneyFormat(service.kidValue);
 
     initCarousel();
-    initCart();
+    drawCartItems();
     suplyInfo();
   }
 
-  function initCart() {
+  function drawCartItems() {
+    state.views.cartBoxItems.innerHTML = '';
+    let i = 0;
+    state.values.cartTotal = 0;
     state.values.userCart.forEach((element) => {
-       state.views.cartBoxItems.innerHTML += `<div class="cart-item">
+        state.views.cartBoxItems.innerHTML += `<div class="cart-item">
                                                 <hr>
-                                                <p class="fw-bold txt-secondary mb-0 fs-6 ps-2">${element.name}:</p>
+                                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                                    <p class="fw-bold txt-secondary mb-0 fs-6 ps-2">${element.name}:</p>
+                                                    <i class="bi bi-x fs-4 text-danger cart-item-remover"
+                                                       data-elementIndex="${i}">
+                                                    </i>
+                                                </div>
                                                 <div class="d-flex flex-row justify-content-between ps-5 txt-subtitle">
                                                     <span>${element.adultQtd}x Adulto</span>
                                                     <span>${ToMoneyFormat(element.adultValue)}</span>
@@ -111,30 +124,50 @@ window.onscroll = function () {
                                                     <span>${element.kidQtd}x Adulto</span>
                                                     <span>${ToMoneyFormat(element.kidValue)}</span>
                                                 </div>
+                                                <div class="w-100 d-flex justify-content-end mt-2">
+                                                    <span>Total: ${ToMoneyFormat(element.total)}</span>
+                                                </div>
                                                 <hr>
                                             </div>`
+        i++;
+        state.values.cartTotal += element.total;
     })
+
+    state.views.cartTotal.innerHTML = ToMoneyFormat(state.values.cartTotal);
+    addCartItemBehavior();
+}
+
+function addCartItemBehavior() {
+    document.querySelectorAll('.cart-item-remover').forEach((element => {
+        element.addEventListener('click', function() {
+            const index = element.getAttribute('data-elementIndex');
+            state.values.userCart.splice(index, 1);
+            drawCartItems();
+            localStorage.setItem('userCart', JSON.stringify(state.values.userCart))
+        })
+    }))
+}
+
+function initCarousel() {
+  const carouselBox = document.querySelector('.carousel-inner');
+  const indicatorsBox = document.querySelector('.carousel-indicators');
+
+  for(let i = 0; i < service.viewImgs.length; i++) {
+      carouselBox.innerHTML += `<div class="carousel-item ${i == 0 ? 'active' : ''}">
+                                  <img src="${service.viewImgs[i].path}" class="w-100">
+                              </div>`;
+
+      indicatorsBox.innerHTML += `<button type="button" ${i == 0 ? 'class="active"' : ''}"
+                                      data-bs-target="#carousel"
+                                      data-bs-slide-to="${i}">
+                                      <img src="${service.viewImgs[i].path}" alt="">
+                                  </button>`
   }
-
-  function initCarousel() {
-    const carouselBox = document.querySelector('.carousel-inner');
-    const indicatorsBox = document.querySelector('.carousel-indicators');
-
-    for(let i = 0; i < service.viewImgs.length; i++) {
-        carouselBox.innerHTML += `<div class="carousel-item ${i == 0 ? 'active' : ''}">
-                                    <img src="${service.viewImgs[i].path}" class="w-100">
-                                </div>`;
-
-        indicatorsBox.innerHTML += `<button type="button" ${i == 0 ? 'class="active"' : ''}"
-                                        data-bs-target="#carousel"
-                                        data-bs-slide-to="${i}">
-                                        <img src="${service.viewImgs[i].path}" alt="">
-                                    </button>`
-    }
-  }
+}
 
   function suplyInfo() {
     document.getElementById('service-name').innerHTML = service.name;
+    document.getElementById('preBooking-value').innerHTML = ToMoneyFormat(service.preBooking);
 
     const atractiveBox = document.querySelector('.atractives-box');
     const remarksViewList = document.getElementById('remarks-info'); 

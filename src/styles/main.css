@@ -19,7 +19,7 @@ body ul {
     align-items: center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    background-color: green;
+    background-color: limegreen;
     position: fixed;
     width: 10rem;
     height: 2rem;
@@ -67,7 +67,7 @@ body ul {
 
     .price-text{
         line-height: 15px;
-        color: lightcoral;
+        color: lightseagreen;
     }
 
 .card:hover{
@@ -79,6 +79,7 @@ body ul {
 .cart-button:hover{
     background-color: lightcoral;
     color: white;
+    cursor: pointer;
 }
 
 .carousel-caption{

@@ -53,3 +53,9 @@ body a{
 .carousel-indicators{
     position: unset!important;
 }
+
+.cart-button:hover{
+    background-color: lightcoral;
+    color: white;
+    cursor: pointer;
+}
