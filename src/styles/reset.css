@@ -6,6 +6,11 @@
     user-select: none;
 }
 
+a{
+    text-decoration: none;
+    color: inherit !important;
+}
+
 .fixed-header{
     height: 6rem;
     background-color: white;

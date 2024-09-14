@@ -54,6 +54,21 @@ closeModalBtn.addEventListener("click", function() {
 // Isert cart itens
 drawCartItems();
 
+checkoutBtn.addEventListener("click", function() {
+    if(userCart.length == 0) return;
+
+    const cartItems = userCart.map((item) => {
+        return (
+            `${item.name} para ${item.adultQtd} adultos e ${item.kidQtd} crianças, Total: ${ToMoneyFormat(item.total)} |`
+        )
+    }).join("");
+
+    const message = encodeURIComponent(`Olá Mateus gostaria de mais informações acerca desta cotação: ` + cartItems);
+    const phone = "7399528587";
+
+    window.open(`https://wa.me/${phone}?text=${message}`)
+})
+
 function createTuorCard(service, id) {
     return `<div class="card" style="border-radius: 20px; min-height: 21rem;"
             data-serviceIndex="${id}">

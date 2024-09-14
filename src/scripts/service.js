@@ -9,7 +9,8 @@ const state = {
         reserveBtn: document.getElementById('reserve-button'),
         cartBoxItems: document.getElementById('cart-items'),
         cartModal: document.getElementById('cart-modal'),
-        cartTotal: document.getElementById('cart-total')
+        cartTotal: document.getElementById('cart-total'),
+        checkoutBtn: document.getElementById('check-out-btn')
     },
 
     values: {
@@ -135,6 +136,21 @@ window.onscroll = function () {
 
     state.views.cartTotal.innerHTML = ToMoneyFormat(state.values.cartTotal);
     addCartItemBehavior();
+
+    state.views.checkoutBtn.addEventListener("click", function() {
+      if(state.values.userCart.length == 0) return;
+  
+      const cartItems = state.values.userCart.map((item) => {
+          return (
+              `${item.name} para ${item.adultQtd} adultos e ${item.kidQtd} crianças, Total: ${ToMoneyFormat(item.total)} |`
+          )
+      }).join("");
+  
+      const message = encodeURIComponent(`Olá Mateus gostaria de mais informações acerca desta cotação: ` + cartItems);
+      const phone = "7399528587";
+  
+      window.open(`https://wa.me/${phone}?text=${message}`)
+  })
 }
 
 function addCartItemBehavior() {
