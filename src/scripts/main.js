@@ -69,6 +69,11 @@ checkoutBtn.addEventListener("click", function() {
     window.open(`https://wa.me/${phone}?text=${message}`)
 })
 
+document.getElementById('show-tuors-btn').addEventListener('click', function() {
+    window.scrollBy(0,500);
+})
+
+//Functions
 function createTuorCard(service, id) {
     return `<div class="card" style="border-radius: 20px; min-height: 21rem;"
             data-serviceIndex="${id}">

@@ -33,6 +33,10 @@ a{
     background-color: rgb(211, 137, 0) !important;
 }
 
+.border-color-secondary{
+    border-color: rgb(211, 137, 0) !important;
+}
+
 .txt-subtitle{
     color: #6c757d !important;
 }
