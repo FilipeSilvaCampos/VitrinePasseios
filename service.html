@@ -38,7 +38,7 @@
     </div>
     </nav>
 
-    <!--Fixed Header-->
+    <!--Fixed Top-->
     <div id="fixed-top" class="position-fixed w-100 shadow invisible" style="top: 0; z-index: 10;">
         <div class="fixed-header">
             <div>
@@ -49,7 +49,7 @@
                 <a href="" class="fs-6 fw-semibold ms-3" style="color: black;">Contato</a>
             </div>
             <div class="cart-button rounded-circle p-4 d-flex align-items-center justify-content-center"
-           style="border: solid 2px lightcoral; height: 2rem; width: 2rem;">
+           style="border: solid 2px lightseagreen; height: 2rem; width: 2rem;">
               <i class="bi bi-cart-fill"></i>
           </div>
         </div>
@@ -64,7 +64,7 @@
               </a>
           </div>
           <div class="cart-button rounded-circle p-4 d-flex align-items-center justify-content-center"
-           style="border: solid 2px lightcoral; height: 2rem; width: 2rem;"
+           style="border: solid 2px lightseagreen; height: 2rem; width: 2rem;"
            id="cart-btn">
               <i class="bi bi-cart-fill"></i>
           </div>
@@ -145,33 +145,9 @@
                             </div>
                             <p id="total-pessoas" class="text-secondary"></p>
                         </div>
-                        <div class="d-flex flex-row align-items-center justify-content-between mt-3">
-                            <div class="value-info">
-                                <span class="fw-bold">Adulto</span>
-                                <span id="adult-value">R$30.00</span>
-                            </div>
-                            <div>
-                                <i class="bi bi-dash"
-                                data-reference="adultQtd"></i>
-                                <span id="adult-qtd" class="amount-button">0</span>
-                                <i class="bi bi-plus-lg"
-                                data-reference="adultQtd"></i>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center justify-content-between mt-3">
-                            <div class="value-info">
-                                <span class="fw-bold">Criança</span>
-                                <p>(De 4 a 9 anos)</p>
-                                <span id="kid-value">R$30.00</span>
-                            </div>
-                            <div>
-                                <i class="bi bi-dash"
-                                data-reference="kidQtd"></i>
-                                <span id="kid-qtd" class="amount-button">0</span>
-                                <i class="bi bi-plus-lg"
-                                data-reference="kidQtd"></i>
-                            </div>
-                        </div>
+                        <div id="tickets-box">
+
+                        </div> 
                     </div>
                     <div class="d-flex justify-content-center w-100 p-3">
                         <button id="reserve-button" class="backg-secondary w-100 rounded fs-5 fw-bold text-light">Adicionar ao carrinho</button>

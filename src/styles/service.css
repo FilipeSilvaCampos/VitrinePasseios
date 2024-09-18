@@ -55,7 +55,7 @@ body a{
 }
 
 .cart-button:hover{
-    background-color: lightcoral;
+    background-color: lightseagreen;
     color: white;
     cursor: pointer;
 }

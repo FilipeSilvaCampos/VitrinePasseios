@@ -1,7 +1,5 @@
 const state = {
     views: {
-        adultQtd: document.getElementById("adult-qtd"),
-        kidQtd: document.getElementById('kid-qtd'),
         subTotal: document.getElementById('subtotal'),
         totalPessoas: document.getElementById('total-pessoas'),
         priceCard: document.getElementById('priceCard'),
@@ -10,13 +8,11 @@ const state = {
         cartBoxItems: document.getElementById('cart-items'),
         cartModal: document.getElementById('cart-modal'),
         cartTotal: document.getElementById('cart-total'),
-        checkoutBtn: document.getElementById('check-out-btn')
+        checkoutBtn: document.getElementById('check-out-btn'),
+        tickets: []
     },
 
     values: {
-        adultQtd: 0,
-        cartTotal: 0,
-        kidQtd: 0,
         subTotal: 0,
         userCart: []
     }
@@ -30,8 +26,8 @@ fetch("./src/data.json").then((response) => {
          service = data.servicos[urlParams.get('service')];
 
          state.values.userCart = JSON.parse(localStorage.getItem('userCart')) ?? [];
-         initButtons();
          initViews();
+         initButtons();
     });
 })
 
@@ -41,6 +37,72 @@ window.onscroll = function () {
 
 
   //Functions
+  function initViews() {
+    insertCardTickets();
+    suplyInfo();
+    initCarousel();
+    drawCartItems();
+  }
+
+  function suplyInfo() {
+    document.getElementById('service-name').innerHTML = service.name;
+    document.getElementById('preBooking-value').innerHTML = ToMoneyFormat(service.preBooking);
+
+    const atractiveBox = document.querySelector('.atractives-box');
+    const remarksViewList = document.getElementById('remarks-info'); 
+
+    service.atractives.forEach((atractive) => {
+        atractiveBox.innerHTML += `<div class="d-flex flex-row align-items-center w-100 mb-2">
+                                        <i class="fs-2 me-3 bi ${atractive.iconClass}"></i> 
+                                        <div class="d-flex flex-column">
+                                            <span class="lh-1"><b>${atractive.title}</b></span>
+                                            <span>${atractive.description}</span>
+                                        </div>
+                                    </div>`
+    })
+
+    let valueMessage = "<li><b>Valor do Passio: </b>";
+    service.tickets.forEach((element) => {
+      valueMessage += `${ToMoneyFormat(element.value)} por ${element.category}${element.remark}, `
+    })
+    document.getElementById('description-basic-info').innerHTML = `${valueMessage}.</li> <li><b>Forma de Pagamento: </b>Pré-reserva de ${ToMoneyFormat(service.preBooking)} e no dia do passeio ${ToMoneyFormat(service.tickets[0].value - service.preBooking)}.</li>`
+
+    service.remarks.forEach((element) => {
+        remarksViewList.innerHTML += `<li>${element.content}</li>`
+    })
+
+    document.getElementById('tuor-description').innerHTML = service.description;
+  }
+
+  function insertCardTickets() {
+    let ticketsHtml = '';
+    for(let i = 0; i < service.tickets.length; i++)
+    {
+      const currentTicket = service.tickets[i];
+      state.values[currentTicket.category + 'Qtd'] = 0;
+
+      ticketsHtml += `<div class="d-flex flex-row align-items-center justify-content-between mt-3">
+                          <div class="value-info">
+                              <span class="fw-bold">${currentTicket.category}</span>
+                              ${currentTicket.remark == null? '' : '<p>' + currentTicket.remark + '</p>' }
+                              <span>${ToMoneyFormat(currentTicket.value)}</span>
+                          </div>
+                          <div>
+                              <i class="bi bi-dash"
+                              data-reference="${currentTicket.category}Qtd"></i>
+                              <span id="${currentTicket.category}-qtd" class="amount-button">0</span>
+                              <i class="bi bi-plus-lg"
+                              data-reference=${currentTicket.category}Qtd></i>
+                          </div>
+                      </div>`
+    }
+    document.getElementById("tickets-box").innerHTML = ticketsHtml;
+
+    service.tickets.forEach((ticket) => {
+      state.views[ticket.category + "Qtd"] = document.getElementById(ticket.category + '-qtd');
+    })
+  }
+
   function initButtons() {
 
     document.querySelectorAll(".cart-button").forEach((element) => {
@@ -65,10 +127,10 @@ window.onscroll = function () {
 
     document.querySelectorAll(".bi-plus-lg").forEach((element) => {
         element.addEventListener("click", function() {
-            const ref = element.getAttribute('data-reference');
-            state.values[ref]++;
-            state.views[ref].innerHTML = state.values[ref];
-            calcAmount();
+          const ref = element.getAttribute('data-reference');
+          state.values[ref]++;
+          state.views[ref].innerHTML = state.values[ref];
+          calcAmount();
         })
     })
 
@@ -81,12 +143,18 @@ window.onscroll = function () {
     state.views.reserveBtn.addEventListener('click', function () {
       const wantedService = {
         "name": service.name,
-        "adultValue" : service.value,
-        "kidValue": service.kidValue,
-        "adultQtd" : state.values.adultQtd,
-        "kidQtd": state.values.kidQtd,
+        "tickets": [],
         "total": state.values.subTotal
       }
+
+      service.tickets.forEach((element) => {
+        wantedService.tickets.push({
+          "category": element.category,
+          "value": element.value,
+          "qtd": state.values[element.category + 'Qtd']
+        })
+      })
+
     
       state.values.userCart.push(wantedService);
       localStorage.setItem('userCart', JSON.stringify(state.values.userCart));
@@ -95,15 +163,8 @@ window.onscroll = function () {
     })
   }
 
-  function initViews() {
-    document.getElementById('adult-value').innerHTML = ToMoneyFormat(service.value);
-    document.getElementById('kid-value').innerHTML = ToMoneyFormat(service.kidValue);
-
-    initCarousel();
-    drawCartItems();
-    suplyInfo();
-  }
-
+  
+////////////Draw cart items //////////////////////////
   function drawCartItems() {
     state.views.cartBoxItems.innerHTML = '';
     let i = 0;
@@ -117,14 +178,7 @@ window.onscroll = function () {
                                                        data-elementIndex="${i}">
                                                     </i>
                                                 </div>
-                                                <div class="d-flex flex-row justify-content-between ps-5 txt-subtitle">
-                                                    <span>${element.adultQtd}x Adulto</span>
-                                                    <span>${ToMoneyFormat(element.adultValue)}</span>
-                                                </div>
-                                                <div class="d-flex flex-row justify-content-between ps-5 txt-subtitle">
-                                                    <span>${element.kidQtd}x Adulto</span>
-                                                    <span>${ToMoneyFormat(element.kidValue)}</span>
-                                                </div>
+                                                ${drawTicketsInbox(element.tickets)}
                                                 <div class="w-100 d-flex justify-content-end mt-2">
                                                     <span>Total: ${ToMoneyFormat(element.total)}</span>
                                                 </div>
@@ -140,17 +194,33 @@ window.onscroll = function () {
     state.views.checkoutBtn.addEventListener("click", function() {
       if(state.values.userCart.length == 0) return;
   
-      const cartItems = state.values.userCart.map((item) => {
-          return (
-              `${item.name} para ${item.adultQtd} adultos e ${item.kidQtd} crianças, Total: ${ToMoneyFormat(item.total)} |`
-          )
-      }).join("");
+      let order = '';
+      state.values.userCart.forEach((element) => {
+        let message = `${element.name}: `;
+        element.tickets.forEach((element) => {
+          message += `${element.qtd}x ${element.category}, `
+        })
+        order += message + `Total: ${ToMoneyFormat(element.total)} |  `;
+      })
   
-      const message = encodeURIComponent(`Olá Mateus gostaria de mais informações acerca desta cotação: ` + cartItems);
+      const message = encodeURIComponent(`Olá gostaria de mais informações acerca desta cotação: ` + order);
       const phone = "7399528587";
   
       window.open(`https://wa.me/${phone}?text=${message}`)
   })
+}
+
+function drawTicketsInbox(ticketsList) {
+  let html = '';
+
+  ticketsList.forEach((element) => {
+    html += `<div class="d-flex flex-row justify-content-between ps-5 txt-subtitle">
+                  <span>${element.qtd}x ${element.category}</span>
+                  <span>${ToMoneyFormat(element.value)}</span>
+              </div>`
+  })
+
+  return html;
 }
 
 function addCartItemBehavior() {
@@ -163,6 +233,8 @@ function addCartItemBehavior() {
         })
     }))
 }
+
+///////////////////////
 
 function initCarousel() {
   const carouselBox = document.querySelector('.carousel-inner');
@@ -181,33 +253,6 @@ function initCarousel() {
   }
 }
 
-  function suplyInfo() {
-    document.getElementById('service-name').innerHTML = service.name;
-    document.getElementById('preBooking-value').innerHTML = ToMoneyFormat(service.preBooking);
-
-    const atractiveBox = document.querySelector('.atractives-box');
-    const remarksViewList = document.getElementById('remarks-info'); 
-
-    service.atractives.forEach((atractive) => {
-        atractiveBox.innerHTML += `<div class="d-flex flex-row align-items-center w-100 mb-2">
-                                        <i class="fs-2 me-3 bi ${atractive.iconClass}"></i> 
-                                        <div class="d-flex flex-column">
-                                            <span class="lh-1"><b>${atractive.title}</b></span>
-                                            <span>${atractive.description}</span>
-                                        </div>
-                                    </div>`
-    })
-
-    document.getElementById('description-basic-info').innerHTML = `<li><b>Valor do Passio: </b>${ToMoneyFormat(service.value)} por adulto e ${ToMoneyFormat(service.kidValue)} para crianças de 04-09 anos.</li>
-                                                                   <li><b>Forma de Pagamento: </b>Pré-reserva de ${ToMoneyFormat(service.preBooking)} e no dia do passeio ${ToMoneyFormat(service.value - service.preBooking)}.</li>`
-
-    service.remarks.forEach((element) => {
-        remarksViewList.innerHTML += `<li>${element.content}</li>`
-    })
-
-    document.getElementById('tuor-description').innerHTML = `<p>${service.description}</p>`
-  }
-
   function stickyScroll() {
       if(window.scrollY <= priceCard.parentElement.offsetHeight - priceCard.offsetHeight) {
         state.views.priceCard.style.top = window.scrollY + "px";
@@ -222,14 +267,21 @@ function initCarousel() {
   }
 
   function calcAmount() {
-    state.values.subTotal = (state.values.adultQtd * service.value) + (state.values.kidQtd * service.kidValue);
+    state.values.subTotal = 0;
+    let message = '';
+
+    service.tickets.forEach((element) => {
+      const ticketsCount = state.values[element.category + 'Qtd'];
+
+      if(ticketsCount != 0){
+        state.values.subTotal += element.value * ticketsCount;
+        message += `${ticketsCount} ${element.category}, `;
+      }
+    })
+
     state.views.subTotal.innerHTML = "Subtotal: " + ToMoneyFormat(state.values.subTotal);
-
-    const adultSt = state.values.adultQtd > 0 ? `${state.values.adultQtd} Adultos, ` : '';
-    const kidSt = state.values.kidQtd > 0 ? `${state.values.kidQtd} Crianças, ` : '';
-    state.views.totalPessoas.innerHTML = adultSt + kidSt;
+    state.views.totalPessoas.innerHTML = message;
   }
-
 
   //Support funcions
   function ToMoneyFormat(string) {

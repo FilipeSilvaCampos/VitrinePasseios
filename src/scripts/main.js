@@ -34,7 +34,7 @@ window.onscroll = function() {
 }
 
 //Open cart modal
-document.querySelectorAll(".cart-button").forEach((element) => {
+document.querySelectorAll(".open-cart-button").forEach((element) => {
     element.addEventListener('click', function () {
       cartModal.style.display = 'flex'
     })
@@ -53,21 +53,6 @@ closeModalBtn.addEventListener("click", function() {
 
 // Isert cart itens
 drawCartItems();
-
-checkoutBtn.addEventListener("click", function() {
-    if(userCart.length == 0) return;
-
-    const cartItems = userCart.map((item) => {
-        return (
-            `${item.name} para ${item.adultQtd} adultos e ${item.kidQtd} crianças, Total: ${ToMoneyFormat(item.total)} |`
-        )
-    }).join("");
-
-    const message = encodeURIComponent(`Olá Mateus gostaria de mais informações acerca desta cotação: ` + cartItems);
-    const phone = "7399528587";
-
-    window.open(`https://wa.me/${phone}?text=${message}`)
-})
 
 document.getElementById('show-tuors-btn').addEventListener('click', function() {
     window.scrollBy(0,500);
@@ -100,6 +85,7 @@ function createAtractiveElements(atractiveList) {
     return element + "</div>";
 }
 
+//////////////Draw cart items
 function drawCartItems() {
     cartBoxItems.innerHTML = '';
     let i = 0;
@@ -113,14 +99,7 @@ function drawCartItems() {
                                                        data-elementIndex="${i}">
                                                     </i>
                                                 </div>
-                                                <div class="d-flex flex-row justify-content-between ps-5 txt-subtitle">
-                                                    <span>${element.adultQtd}x Adulto</span>
-                                                    <span>${ToMoneyFormat(element.adultValue)}</span>
-                                                </div>
-                                                <div class="d-flex flex-row justify-content-between ps-5 txt-subtitle">
-                                                    <span>${element.kidQtd}x Adulto</span>
-                                                    <span>${ToMoneyFormat(element.kidValue)}</span>
-                                                </div>
+                                                ${drawTicketsInbox(element.tickets)}
                                                 <div class="w-100 d-flex justify-content-end mt-2">
                                                     <span>Total: ${ToMoneyFormat(element.total)}</span>
                                                 </div>
@@ -132,6 +111,37 @@ function drawCartItems() {
 
     cartTotalView.innerHTML = ToMoneyFormat(cartTotal);
     addCartItemBehavior();
+
+    checkoutBtn.addEventListener("click", function() {
+      if(userCart.length == 0) return;
+  
+      let order = '';
+      userCart.forEach((element) => {
+        let message = `${element.name}: `;
+        element.tickets.forEach((element) => {
+          message += `${element.qtd}x ${element.category}, `
+        })
+        order += message + `Total: ${ToMoneyFormat(element.total)} |  `;
+      })
+  
+      const message = encodeURIComponent(`Olá gostaria de mais informações acerca desta cotação: ` + order);
+      const phone = "7399528587";
+  
+      window.open(`https://wa.me/${phone}?text=${message}`)
+  })
+}
+
+function drawTicketsInbox(ticketsList) {
+  let html = '';
+
+  ticketsList.forEach((element) => {
+    html += `<div class="d-flex flex-row justify-content-between ps-5 txt-subtitle">
+                  <span>${element.qtd}x ${element.category}</span>
+                  <span>${ToMoneyFormat(element.value)}</span>
+              </div>`
+  })
+
+  return html;
 }
 
 function addCartItemBehavior() {
@@ -140,10 +150,11 @@ function addCartItemBehavior() {
             const index = element.getAttribute('data-elementIndex');
             userCart.splice(index, 1);
             drawCartItems();
-            localStorage.setItem('userCart', JSON.stringify(state.values.userCart))
+            localStorage.setItem('userCart', JSON.stringify(userCart))
         })
     }))
 }
+///////////////////////////////////
 
 function stickyScroll() {
     if(window.scrollY < fixedTop.offsetHeight)

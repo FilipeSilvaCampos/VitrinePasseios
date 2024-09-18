@@ -14,8 +14,18 @@
                     "path": "./src/imgs/servicos/espelho/espelho_C.jpg"
                 }
             ],
-            "value": 100.00,
-            "kidValue": 90.00,
+            "tickets": [
+                {
+                    "category": "Adulto",
+                    "remark": "",
+                    "value": 100.00
+                },
+                {
+                    "category": "Criança",
+                    "remark": "(de 3 a 5 anos)",
+                    "value": 90.00
+                }
+            ],
             "preBooking" : 20.00,
             "type": 0,
             "remarks": [
@@ -23,7 +33,7 @@
                     "content": "<b>Horario:</b> 7h40 a 8h40."
                 },
                 {
-                    "content": "<b>Duração:</b> Retorno: 17h."
+                    "content": "<b>Retorno:</b> Aproximadamente às 17h."
                 },
                 {
                     "content": "<b>Saidas:</b> Todos os dias."
@@ -46,7 +56,7 @@
                     "description": "Tire suas duvidas com um especialista"
                 }
             ],
-            "description": "Esse passeio é uma mistura de emoção e aventura, graças ao marcante caminho repleto de belas paisagens em meio a mata, trilhado boa parte por estrada de terra. Cruzamos uma grande fazenda de búfalos, passamos pelo Rio dos Frades, cruzamos a tribo indigena de imbiriba em Itaporanga, seguindo à nosso destino, onde permanecemos por 4h. A terceira praia mais bela do brasil! Conhecida como Praia do Espelho, Curuipe é famosa por seus espelhos d'água, formados nas piscinas naturais, entre os corais e arenito. Isso sem contar com a beleza das gigantes falésias, encontradas em pouquíssimos lugares do brasil, e o refrescante rio do Espelho."
+            "description": "Uma mistura de emoção e aventura, graças ao marcante caminho repleto de belas paisagens em meio a mata, trilhado boa parte por estrada de terra. Cruzamos uma grande fazenda de búfalos, passamos pelo Rio dos Frades, cruzamos a tribo indigena imbiriba em Itaporanga, seguindo à nosso destino, onde permanecemos por 4h. A terceira praia mais bela do brasil! Conhecida como Praia do Espelho, Curuipe é famosa por seus espelhos d'água, formados nas piscinas naturais, entre os corais e arenito. Isso sem contar com a beleza das gigantes falésias, encontradas em pouquíssimos lugares do brasil, e o refrescante rio do Espelho."
         },
         {
             "name": "Trancoso",
@@ -62,8 +72,18 @@
                     "path": "./src/imgs/servicos/trancoso/trancoso_C.jpg"
                 }
             ],
-            "value": 80.00,
-            "kidValue": 70.00,
+            "tickets": [
+                {
+                    "category": "Adulto",
+                    "remark": "",
+                    "value": 80.00
+                },
+                {
+                    "category": "Criança",
+                    "remark": "(de 3 a 5 anos)",
+                    "value": 70.00
+                }
+            ],
             "preBooking" : 20.00,
             "type": 0,
             "remarks": [
@@ -71,19 +91,19 @@
                     "content": "<b>Horario:</b> 7h40 a 8h40."
                 },
                 {
-                    "content": "<b>Duração:</b> Retorno: 17h."
+                    "content": "<b>Rertorno:</b> Aproximadamente às 17h."
                 },
                 {
                     "content": "<b>Saidas:</b> Todos os dias."
                 },
                 {
-                    "content": "<b>Viagem longa: </b>Aproximandente 80km. cerca de 1h30 de viagem."
+                    "content": "<b>Destino:</b> Aproximandente 80km. cerca de 1h30 de viagem."
                 }
             ],
             "atractives": [
                 {
                     "iconClass": "bi-camera",
-                    "title": "Cenarios Incriveis",
+                    "title": "Cenarios Incríveis",
                     "description": "Lugares incriveis para tirar foto"
                 },
                 {
@@ -94,10 +114,10 @@
                 {
                     "iconClass": "bi-whatsapp",
                     "title": "Atendimento personalizado",
-                    "description": "Tire suas duvidas com um especialista"
+                    "description": "Tire suas dúvidas com um especialista"
                 }
             ],
-            "description": "Destino de aproximadamente 80km, cerca de 1h30 de viagem. Iniciamos o passeio com destino direto à praia dos Coqueiros, onde permanecemos por 4h numa cabana de praia completa para um confortável dia. Vale a pena considerar uma caminhada de 10min para conhecer também a Praia dos Nativos, onde fica a famosa casinha do pescador. A segunda etapa do passeio é no charmoso quadrado de Trancoso. O guia que os acompanha compartilha ricas informações sobre a comunidade, sua história, a igreja São João Batista e muito mais. Vocês vão se apaixonar pelo centro histórico de lá, é simplesmente encantador. Após, no retorno aos hotéis, temos duas paradas, uma em Vale verde, para esticarmos as pernas, degustarmos as famosas cachaças da região e também as deliciosas cocadas e doces produzidos pela comunidade. E a segunda, numa fabrica de chocolate, para conhecer de perto a tão importante fruta que fez história na Bahia, o CACAU."
+            "description": "Iniciamos o passeio com destino direto à praia dos Coqueiros, onde permanecemos por 4h numa cabana de praia completa para um confortável dia. Vale a pena considerar uma caminhada de 10min para conhecer também a Praia dos Nativos, onde fica a famosa casinha do pescador. A segunda etapa do passeio é no charmoso quadrado de Trancoso. O guia que os acompanha compartilha ricas informações sobre a comunidade, sua história, a igreja São João Batista e muito mais. Vocês vão se apaixonar pelo centro histórico de lá, é simplesmente encantador. Após, no retorno aos hotéis, temos duas paradas, uma em Vale verde, para esticarmos as pernas, degustarmos as famosas cachaças da região e também as deliciosas cocadas e doces produzidos pela comunidade. E a segunda, numa fabrica de chocolate, para conhecer de perto a tão importante fruta que fez história na Bahia, o CACAU."
         },
         {
             "name": "Arraial D'Ajuda",
@@ -113,8 +133,18 @@
                     "path": "./src/imgs/servicos/arraial/arraial_C.jpg"
                 }
             ],
-            "value": 85.00,
-            "kidValue": 75.00,
+            "tickets": [
+                {
+                    "category": "Adulto",
+                    "remark": "",
+                    "value": 85.00
+                },
+                {
+                    "category": "Criança",
+                    "remark": "(de 3 a 5 anos)",
+                    "value": 75.00
+                }
+            ],
             "preBooking" : 20.00,
             "type": 0,
             "remarks": [
@@ -122,7 +152,7 @@
                     "content": "<b>Horario:</b> 7h40 a 8h40."
                 },
                 {
-                    "content": "<b>Duração:</b> Retorno: 17h."
+                    "content": "<b>Retorno:</b> Aproximadamente às 17h."
                 },
                 {
                     "content": "<b>Saidas:</b> Todos os dias."
@@ -131,8 +161,8 @@
             "atractives": [
                 {
                     "iconClass": "bi-camera",
-                    "title": "Cenarios Incriveis",
-                    "description": "Lugares incriveis para tirar foto"
+                    "title": "Cenarios Incríveis",
+                    "description": "Lugares incríveis para tirar foto"
                 },
                 {
                     "iconClass": "bi-brightness-high",
@@ -161,8 +191,18 @@
                     "path": "./src/imgs/servicos/coroa_vermelha/coroa_C.jpg"
                 }
             ],
-            "value": 60.00,
-            "kidValue": 50.00,
+            "tickets": [
+                {
+                    "category": "Adulto",
+                    "remark": "",
+                    "value": 60.00
+                },
+                {
+                    "category": "Criança",
+                    "remark": "(de 3 a 5 anos)",
+                    "value": 50.00
+                }
+            ],
             "preBooking" : 20.00,
             "type": 0,
             "remarks": [
@@ -179,8 +219,8 @@
             "atractives": [
                 {
                     "iconClass": "bi-camera",
-                    "title": "Cenarios Incriveis",
-                    "description": "Lugares incriveis para tirar foto"
+                    "title": "Cenarios Incríveis",
+                    "description": "Lugares incríveis para tirar foto"
                 },
                 {
                     "iconClass": "bi-translate",
@@ -188,7 +228,7 @@
                     "description": "Os Pataxós recebem os visitantes com uma apresentação em sua língua, Patxohã"
                 },
                 {
-                    "iconClass": "bi-whatsapp",
+                    "iconClass": "bi-bag-heart",
                     "title": "Passarela Indígena",
                     "description": " Explorare o comércio da passarela indígena"
                 }
@@ -209,8 +249,18 @@
                     "path": "./src/imgs/servicos/coroa_alta/coroa_alta_C.jpg"
                 }
             ],
-            "value": 130.00,
-            "kidValue": 100.00,
+            "tickets": [
+                {
+                    "category": "Adulto",
+                    "remark": "",
+                    "value": 130.00
+                },
+                {
+                    "category": "Criança",
+                    "remark": "(de 6 a 10 anos)",
+                    "value": 100.00
+                }
+            ],
             "preBooking" : 20.00,
             "type": 0,
             "remarks": [
@@ -218,7 +268,7 @@
                     "content": "<b>Horario:</b> 7h40 a 8h40."
                 },
                 {
-                    "content": "<b>Duração:</b> Retorno: 17h."
+                    "content": "<b>Retorno:</b> Aproximadamente às 17h."
                 },
                 {
                     "content": "<b>Saidas:</b> De segunda a sabado."
@@ -230,8 +280,8 @@
             "atractives": [
                 {
                     "iconClass": "bi-camera",
-                    "title": "Cenarios Incriveis",
-                    "description": "Lugares incriveis para tirar foto"
+                    "title": "Cenarios Incríveis",
+                    "description": "Lugares incríveis para tirar foto"
                 },
                 {
                     "iconClass": "bi-flower3",
@@ -260,8 +310,13 @@
                     "path": "./src/imgs/servicos/quadriciclo/quadriciclo_C.jpg"
                 }
             ],
-            "value": 280.00,
-            "kidValue": 280.00,
+            "tickets": [
+                {
+                    "category": "Adulto",
+                    "remark": "(Valor para 2 pessoas)",
+                    "value": 280.00
+                }
+            ],
             "preBooking" : 40.00,
             "type": 0,
             "remarks": [
@@ -269,7 +324,7 @@
                     "content": "<b>Horario:</b> Manhã ou tarde, a combinar."
                 },
                 {
-                    "content": "<b>Duração:</b> 2h30."
+                    "content": "<b>Duração:</b> Aproximadante 2h30."
                 },
                 {
                     "content": "<b>Saidas:</b> De segunda a sabado."
@@ -281,8 +336,8 @@
             "atractives": [
                 {
                     "iconClass": "bi-camera",
-                    "title": "Cenarios Incriveis",
-                    "description": "Lugares incriveis para tirar foto"
+                    "title": "Cenarios Incríveis",
+                    "description": "Lugares incríveis para tirar foto"
                 },
                 {
                     "iconClass": "bi-cup-straw",
@@ -311,8 +366,18 @@
                     "path": "./src/imgs/servicos/bobocas/bobocas_C.jpg"
                 }
             ],
-            "value": 90.00,
-            "kidValue": 80.00,
+            "tickets": [
+                {
+                    "category": "Adulto",
+                    "remark": "",
+                    "value": 90.00
+                },
+                {
+                    "category": "Criança",
+                    "remark": "(de 3 a 5 anos)",
+                    "value": 80.00
+                }
+            ],
             "preBooking" : 20.00,
             "type": 0,
             "remarks": [
@@ -320,7 +385,7 @@
                     "content": "<b>Horario:</b> 7h30 a 8h30."
                 },
                 {
-                    "content": "<b>Duração:</b> Retorno: 17h."
+                    "content": "<b>Retorno:</b> Aproximadamente às 17h."
                 },
                 {
                     "content": "<b>Saidas:</b> Às quintas."
@@ -329,8 +394,8 @@
             "atractives": [
                 {
                     "iconClass": "bi-camera",
-                    "title": "Cenarios Incriveis",
-                    "description": "Lugares incriveis para tirar foto"
+                    "title": "Cenarios Incríveis",
+                    "description": "Lugares incríveis para tirar foto"
                 },
                 {
                     "iconClass": "bi-sort-up-alt",
@@ -359,8 +424,18 @@
                     "path": "./src/imgs/servicos/arraial_noite/arraial_noite_C.jpg"
                 }
             ],
-            "value": 85.00,
-            "kidValue": 75.00,
+            "tickets": [
+                {
+                    "category": "Adulto",
+                    "remark": "",
+                    "value": 85.00
+                },
+                {
+                    "category": "Criança",
+                    "remark": "(de 3 a 5 anos)",
+                    "value": 75.00
+                }
+            ],
             "preBooking" : 20.00,
             "type": 0,
             "remarks": [
@@ -368,7 +443,7 @@
                     "content": "<b>Horario:</b> 19h a 19h20."
                 },
                 {
-                    "content": "<b>Duração:</b> Retorno: Quinta(1h00), sexta e sabado(0h00)."
+                    "content": "<b>Retorno:</b> Quinta(1h00), sexta e sabado(0h00)."
                 },
                 {
                     "content": "<b>Saidas:</b> qui, sex e sab."
@@ -377,8 +452,8 @@
             "atractives": [
                 {
                     "iconClass": "bi-camera",
-                    "title": "Cenarios Incriveis",
-                    "description": "Lugares incriveis para tirar foto"
+                    "title": "Cenarios Incríveis",
+                    "description": "Lugares incríveis para tirar foto"
                 },
                 {
                     "iconClass": "bi-shop",
@@ -407,8 +482,18 @@
                     "path": "./src/imgs/servicos/cilindro/cilindro_C.jpg"
                 }
             ],
-            "value": 200.00,
-            "kidValue": 140.00,
+            "tickets": [
+                {
+                    "category": "Adulto",
+                    "remark": "(Valor único)",
+                    "value": 200.00
+                },
+                {
+                    "category": "Acompanhante",
+                    "remark": "",
+                    "value": 140.00
+                }
+            ],
             "preBooking" : 40.00,
             "type": 0,
             "remarks": [
@@ -416,10 +501,13 @@
                     "content": "<b>Horario:</b> 8h00."
                 },
                 {
-                    "content": "<b>Duração:</b> Retorno: 14h aproximadamente."
+                    "content": "<b>Retorno:</b> Aproximadamente 14h."
                 },
                 {
                     "content": "<b>Saidas:</b> Todos os dias."
+                },
+                {
+                    "content": "<b>Crianças:</b> Pertido a partir de 7 anos, valor adulto."
                 }
             ],
             "atractives": [
@@ -455,8 +543,18 @@
                     "path": "./src/imgs/servicos/caraiva/caraiva_C.jpg"
                 }
             ],
-            "value": 130.00,
-            "kidValue": 115.00,
+            "tickets": [
+                {
+                    "category": "Adulto",
+                    "remark": "",
+                    "value": 130.00
+                },
+                {
+                    "category": "Criança",
+                    "remark": "(de 3 a 5 anos)",
+                    "value": 115.00
+                }
+            ],
             "preBooking" : 30.00,
             "type": 0,
             "remarks": [
@@ -464,20 +562,20 @@
                     "content": "<b>Horario:</b> 7h30 a 8h30."
                 },
                 {
-                    "content": "<b>Duração:</b> Retorno: 17h."
+                    "content": "<b>Retorno:</b> Aproximadamente às 17h."
                 },
                 {
                     "content": "<b>Saidas:</b> Ter, quin e sab."
                 },
                 {
-                    "content": "<b>Sem canoa:</b> Não inclui passeio canoa."
+                    "content": "<b>Sem canoa:</b> Não inclui passeio de canoa."
                 }
             ],
             "atractives": [
                 {
                     "iconClass": "bi-camera",
-                    "title": "Cenarios Incriveis",
-                    "description": "Lugares incriveis para tirar foto"
+                    "title": "Cenarios Incríveis",
+                    "description": "Lugares incríveis para tirar foto"
                 },
                 {
                     "iconClass": "bi-binoculars",
@@ -506,8 +604,18 @@
                     "path": "./src/imgs/servicos/recife/recife_C.jpg"
                 }
             ],
-            "value": 150.00,
-            "kidValue": 85.00,
+            "tickets": [
+                {
+                    "category": "Adulto",
+                    "remark": "",
+                    "value": 150.00
+                },
+                {
+                    "category": "Criança",
+                    "remark": "(de 5 a 8 anos)",
+                    "value": 85.00
+                }
+            ],
             "preBooking" : 40.00,
             "type": 0,
             "remarks": [
@@ -530,8 +638,8 @@
             "atractives": [
                 {
                     "iconClass": "bi-camera",
-                    "title": "Cenarios Incriveis",
-                    "description": "Lugares incriveis para tirar foto."
+                    "title": "Cenarios Incríveis",
+                    "description": "Lugares incríveis para tirar foto."
                 },
                 {
                     "iconClass": "bi-emoji-smile",
@@ -547,58 +655,68 @@
             "description": "O parque Marinho Recife de Fora é composto por ecossistema recifal que abrange uma área de 19,68 km³, a maior da Costa do descobrimento e 3° maior do Brasil. Partindo do pier municipal, realizamos uma navegação de 50 minutos, acompanhados da tripulação, guia e fotógrafos. O passeio tem duração aproximada de 4 horas e a permanência nas piscinas naturais é de 2 horas. Realizamos o passeio de acordo com a tábua de marés, no recuo das águas. Quando se formam as piscinas naturais, podemos com o uso do snorkel (incluso no passeio) flutuar e contemplar a beleza dessa biodiversidade. Há também uma breve apresentação do parque na chegada.<br><br>E dada uma aula de sabedoria nativa sobre a vida marinha. Explorem o conhecimento dessas pessoas e desfrutem o privilégio de vivenciar o contato direto com a natureza."
         },
         {
-            "name": "Recife de fora",
-            "cardImg" : "./src/imgs/servicos/recife/recife_card.jpg",
+            "name": "Promoção: 3 passeios",
+            "cardImg" : "./src/imgs/servicos/pacote/pacote_card.jpg",
             "viewImgs": [
                 {
-                    "path": "./src/imgs/servicos/recife/recife_A.jpg"
+                    "path": "./src/imgs/servicos/arraial/arraial_A.jpg"
                 },
                 {
-                    "path": "./src/imgs/servicos/recife/recife_B.jpg"
+                    "path": "./src/imgs/servicos/coroa_vermelha/coroa_B.jpg"
                 },
                 {
-                    "path": "./src/imgs/servicos/recife/recife_C.jpg"
+                    "path": "./src/imgs/servicos/coroa_vermelha/coroa_C.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/trancoso/trancoso_A.jpg"
+                },
+                {
+                    "path": "./src/imgs/servicos/trancoso/trancoso_B.jpg"
                 }
             ],
-            "value": 150.00,
-            "kidValue": 85.00,
+            "tickets": [
+                {
+                    "category": "Adulto",
+                    "remark": "",
+                    "value": 219.99
+                },
+                {
+                    "category": "Criança",
+                    "remark": "(de 3 a 7 anos)",
+                    "value": 170.00
+                }
+            ],
             "preBooking" : 40.00,
-            "type": 0,
+            "type": 1,
             "remarks": [
                 {
-                    "content": "<b>Horario:</b> De acordo com a tábua das mares."
+                    "content": "<b>Transfer:</b> Embarque e desembarque na porta do hotel."
                 },
                 {
-                    "content": "<b>Duração:</b> De acordo com a tábua das mares."
+                    "content": "<b>Seguro de Viagem:</b> Proteção durante todas as sua aventuras."
                 },
                 {
-                    "content": "<b>Saidas:</b> De acorodo com a tábua das mares."
-                },
-                {
-                    "content": "<b>Sem transfer:</b> Com transfer a consultar."
-                },
-                {
-                    "content": "<b>Podera ser cancelado pela marinha:</b> Conforme condições climaticas."
+                    "content": "<b>Saidas:</b> Todos os dias."
                 }
             ],
             "atractives": [
                 {
-                    "iconClass": "bi-camera",
-                    "title": "Cenarios Incriveis",
-                    "description": "Lugares incriveis para tirar foto."
+                    "iconClass": "bi-cash-stack",
+                    "title": "Super Promoção",
+                    "description": "Para aqueles que desejam economizar."
                 },
                 {
-                    "iconClass": "bi-emoji-smile",
-                    "title": "Piscinas Naturais e Snorkel",
-                    "description": "2 horas nas piscinas naturais onde é possivel observar a vida marinha."
+                    "iconClass": "bi-3-circle",
+                    "title": "3 passeios",
+                    "description": "Visitamos um passeio por dia."
                 },
                 {
-                    "iconClass": "bi-stars",
-                    "title": "Aula sobre Vida Marinha",
-                    "description": "Durante o passeio, há uma aula sobre a vida marinha local."
+                    "iconClass": "bi-whatsapp",
+                    "title": "Atendimento personalizado",
+                    "description": "Tire suas duvidas com um especialista"
                 }
             ],
-            "description": "O parque Marinho Recife de Fora é composto por ecossistema recifal que abrange uma área de 19,68 km³, a maior da Costa do descobrimento e 3° maior do Brasil. Partindo do pier municipal, realizamos uma navegação de 50 minutos, acompanhados da tripulação, guia e fotógrafos. O passeio tem duração aproximada de 4 horas e a permanência nas piscinas naturais é de 2 horas. Realizamos o passeio de acordo com a tábua de marés, no recuo das águas. Quando se formam as piscinas naturais, podemos com o uso do snorkel (incluso no passeio) flutuar e contemplar a beleza dessa biodiversidade. Há também uma breve apresentação do parque na chegada.<br><br>E dada uma aula de sabedoria nativa sobre a vida marinha. Explorem o conhecimento dessas pessoas e desfrutem o privilégio de vivenciar o contato direto com a natureza."
+            "description": "<h2>Trancoso:</h2><p>Iniciamos o passeio de <b>Trancoso</b> com destino direto à praia dos Coqueiros, onde permanecemos por 4h numa cabana de praia completa para um confortável dia. Vale a pena considerar uma caminhada de 10min para conhecer também a Praia dos Nativos, onde fica a famosa casinha do pescador. A segunda etapa do passeio é no charmoso quadrado de Trancoso. O guia que os acompanha compartilha ricas informações sobre a comunidade, sua história, a igreja São João Batista e muito mais. Vocês vão se apaixonar pelo centro histórico de lá, é simplesmente encantador. Após, no retorno aos hotéis, temos duas paradas, uma em Vale verde, para esticarmos as pernas, degustarmos as famosas cachaças da região e também as deliciosas cocadas e doces produzidos pela comunidade. E a segunda, numa fabrica de chocolate, para conhecer de perto a tão importante fruta que fez história na Bahia, o CACAU.</p><h2>Arraial</h2><p>Começamos esse roteiro com uma deliciosa travessia de balsa de 12 minutos pelo Rio Buranhém e seguimos direto à praia. Sabia que algumas das praias de Arraial D'Ajuda são áreas de desova de tartarugas marinhas? Atente-se as informações do guia pois além dessa tem muito mais. A 1ª parada acontece na praia, com permanência de 4h. Depois seguimos para a charmosa Vila de Nossa Senhora D'ajuda para conhecer o famoso mirante das fitas, fonte de água da santa, rua 'bróduei' e claro, a linda igreja de nossa padroeira. O Arraial d'Ajuda é puro charme e repleto de belezas naturais. Bora conhecer?</p><h2>Coroa Vermelha</h2><p>Nesse passeio, visitamos uma aldeia indigena e somos recebidos em Patxohā pelos Pataxós, que compartilham as riquezas de sua cultura através de uma breve apresentação com história e curiosidades, lindos artesanatos, dança e convite para quem quiser participar. Após 40 minutos de permanência na tribo, vamos à Praia de Coroa Vermelha, famosa por suas águas quentes e claras. Permanecemos por 4h numa estrutura com todo necessário para um confortável dia. Após o tempo de praia, temos 1h de passeio livre para explorar o comércio da passarela indigena. Ótima opção de compra, com muitas variedades e excelentes preços. Finalizamos retornando aos hotéis.</p>"
         }
     ]
 }
