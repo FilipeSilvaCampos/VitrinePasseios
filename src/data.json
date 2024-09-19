@@ -106,18 +106,18 @@
             "atractives": [
                 {
                     "iconClass": "bi-tsunami",
-                    "title": "3° Praia mais linda do pais",
+                    "title": "3° Praia mais linda do país",
                     "description": "Eleita uma das melhores do mundo"
                 },
                 {
                     "iconClass": "bi-camera",
                     "title": "Otimo para tirar fotos",
-                    "description": "Cenarios incriveis"
+                    "description": "Cenarios incríveis"
                 },
                 {
                     "iconClass": "bi-whatsapp",
                     "title": "Atendimento personalizado",
-                    "description": "Tire suas duvidas com um especialista"
+                    "description": "Tire suas dúvidas com um especialista"
                 }
             ],
             "description": "Uma mistura de emoção e aventura, graças ao marcante caminho repleto de belas paisagens em meio a mata, trilhado boa parte por estrada de terra. Cruzamos uma grande fazenda de búfalos, passamos pelo Rio dos Frades, cruzamos a tribo indigena imbiriba em Itaporanga, seguindo à nosso destino, onde permanecemos por 4h. A terceira praia mais bela do brasil! Conhecida como Praia do Espelho, Curuipe é famosa por seus espelhos d'água, formados nas piscinas naturais, entre os corais e arenito. Isso sem contar com a beleza das gigantes falésias, encontradas em pouquíssimos lugares do brasil, e o refrescante rio do Espelho."
@@ -168,7 +168,7 @@
                 {
                     "iconClass": "bi-camera",
                     "title": "Cenarios Incríveis",
-                    "description": "Lugares incriveis para tirar foto"
+                    "description": "Lugares incríveis para tirar foto"
                 },
                 {
                     "iconClass": "bi-check-circle",
@@ -411,7 +411,7 @@
                 {
                     "iconClass": "bi-rainbow",
                     "title": "Banho de cascata",
-                    "description": "banho de cascata com um deck para fotos diante do rio e no alto do mirante."
+                    "description": "Banho de cascata com um deck para fotos diante do rio e no alto do mirante."
                 }
             ],
             "description": "Onde estão os aventureiros que amam a liberdade e o vento no rosto? Nosso passeio começa na base Fazenda Bom Sossego. Trata-se de uma fazenda de plantações de açai, cupuaçú e coco. As trilhas acontecem em trechos da Mata Atlantica e em meio as grandes plantações. Temos parada para degustação do Cupuaçu 100% natural e curiosidades sobre o plantio. Realizamos também uma parada para banho numa cascata perfeita, com deck para fotos em frente ao río e também no alto do mirante. No retorno, uma deliciosa degustação de creme de cupuaçu e acai, finalizamos assim, com chave de ouro."
@@ -571,7 +571,7 @@
                     "content": "<b>Saidas:</b> Todos os dias."
                 },
                 {
-                    "content": "<b>Crianças:</b> Pertido a partir de 7 anos, valor adulto."
+                    "content": "<b>Crianças:</b> Permitido a partir de 7 anos, valor adulto."
                 }
             ],
             "atractives": [
@@ -594,7 +594,7 @@
             "description": "Bora conhecer Porto Seguro debaixo d'água? A embarcação desse passeio sai do pier da balsa e durante a navegação de aproximadamente 50 minutos, os mergulhadores passarão todas as instruções necessárias para um mergulho tranquilo, seguro e muito gostoso! Serão distribuídas as roupas de Neoprene, apresentados os equipamentos e testados em vocês para que se familiarizem e vejam o quão fácil é respirar com eles. A embarcação conta com uma tripulação completa e instrutores super alto astral, o que não poderia ser diferente, né? As caidas na água são sempre em dupla, um instrutor para cada dupla. Caso queiram, poderão solicitar as fotos submersas feitas pelos mergulhadores, lá eles explicarão como reservar.<br><br> Bom mergulho!"
         },
         {
-            "name": "Caraiva",
+            "name": "Caraíva",
             "cardImg" : "./src/imgs/servicos/caraiva/caraiva_card.jpg",
             "viewImgs": [
                 {
@@ -644,7 +644,7 @@
                 {
                     "iconClass": "bi-binoculars",
                     "title": "Exploração da vila",
-                    "description": "O guia nos conduz pelos principais pontos turísticos e te da 4h livres para explorar"
+                    "description": "O guia nos conduz pelos principais pontos turísticos e te da 4h livres para explorar."
                 },
                 {
                     "iconClass": "bi-cookie",
@@ -652,7 +652,7 @@
                     "description": "Degustação de cachaças, cocadas e doces produzidos pela comunidade local."
                 }
             ],
-            "description": "Caraiva é aquele passeio que parece nos levar para outra dimensão.<br><br> Là nào hà carros, trânsito, barulho ou pressa. Caraiva é sinônimo de sossego e contato total com a natureza. O percurso è de aproximadamente 120km, sendo 50min de asfalto e 1h40min de estrada de terra. Na chegada, desembarcamos da van e realizamos uma deliciosa travessia de canca até a Vila. A travessia é rápida e muito gostosa. O guia apresenta na Vila os principais pontos turisticos: a famosa casinha do 'Sorria, você está em Caraiva', a barra do ria, a Igreja de São Sebastião e o caminho à praia. A permanencia na vila é 4h. No retorno, realizamos uma parada em Vale verde, para esticarmos as pernas, degustarmos as famosas cachaças da região e também as deliciosas cocadas e doces produzidos pela comunidade. Depois, direto ao hotel."
+            "description": "Caraíva é aquele passeio que parece nos levar para outra dimensão.<br><br> Là nào hà carros, trânsito, barulho ou pressa. Caraiva é sinônimo de sossego e contato total com a natureza. O percurso è de aproximadamente 120km, sendo 50min de asfalto e 1h40min de estrada de terra. Na chegada, desembarcamos da van e realizamos uma deliciosa travessia de canca até a Vila. A travessia é rápida e muito gostosa. O guia apresenta na Vila os principais pontos turisticos: a famosa casinha do 'Sorria, você está em Caraiva', a barra do ria, a Igreja de São Sebastião e o caminho à praia. A permanencia na vila é 4h. No retorno, realizamos uma parada em Vale verde, para esticarmos as pernas, degustarmos as famosas cachaças da região e também as deliciosas cocadas e doces produzidos pela comunidade. Depois, direto ao hotel."
         },
         {
             "name": "Recife de fora",
