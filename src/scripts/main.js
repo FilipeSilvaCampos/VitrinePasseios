@@ -125,7 +125,7 @@ function drawCartItems() {
       })
   
       const message = encodeURIComponent(`Olá gostaria de mais informações acerca desta cotação: ` + order);
-      const phone = "7399528587";
+      const phone = "73998313527";
   
       window.open(`https://wa.me/${phone}?text=${message}`)
   })
